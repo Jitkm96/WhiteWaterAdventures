@@ -73,36 +73,14 @@
 .banner h1 {
   text-align: left;
   margin-left: 10vw;
-  color: #e65c00;
+  margin-top: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-style: normal;
   margin-right: 0;
   padding: 0;
-  font-size: 5vw; /* Use viewport width for a responsive base font size */
 }
 
-/* Responsive adjustments for larger screens */
-@media (min-width: 1200px) {
-  .banner h1 {
-    font-size: 4em; /* Adjust font size for very large screens */
-  }
-}
-
-/* Responsive adjustments for tablets */
-@media (max-width: 768px) {
-  .banner h1 {
-    font-size: 6vw; /* Adjust font size for tablets */
-  }
-}
-
-/* Responsive adjustments for mobile phones */
-@media (max-width: 480px) {
-  .banner h1 {
-    font-size: 8vw; /* Adjust font size for mobile phones */
-    margin-left: 5vw; /* Adjust margin for smaller screens */
-  }
-}
 
   /* Home Page */
   .bn {
@@ -122,39 +100,106 @@
   text-align: center; 
   z-index: 10;
 }
-
-
-
-
+.bannertxt {
+  text-align: left;
+}
 .subtitle {
   text-align: center;
   margin-top: 3vw;
+  color: #575757;
+  font-weight: 300;
 }
 
-  .card {
-        background-color: white;
-      }
-  .rftimg {
-        object-fit: cover;
-      }
-  .smalldetail {
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-  .smalldetails {
-    font-size: 14px;
-    margin-bottom: 2vw;
-  }
-@media (max-width: 1199px) {
-  .ser {
-    height: 572px;
+/* Card */
+.img-overlay {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.img-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.img-overlay .overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  color: #fff; /* Text color */
+  padding-left: 10px;
+  padding-top: 10px;
+  background: rgba(0, 0, 0, 0.8); /* Background tint for the text */
+  text-align: left;
+}
+.ser {
+  text-align: left;
+}
+.smalldetail {
+  font-weight: 500;
+}
+
+.overlay-text h4 {
+  margin: 0;
+  color: #196DB9; /* Title color */
+  padding-left: 1vw;
+}
+
+.smalldetail, .smalldetails {
+  margin: 2px 0;
+  margin-top: 0;
+  font-size: small;
+  padding-left: 0.5vw;
+}
+
+@media (max-width: 576px) {
+  .img-overlay .overlay-text {
+    padding: 5px;
   }
 }
+
+/* Ratings */
+.reviews-section {
+  background-color: #196DB9;
+  color: #fff;
+}
+.review-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.review-card {
+  background: transparent;
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+.review-card:hover {
+  transform: translateY(-10px);
+}
+.review-content {
+  text-align: center;
+}
+
 
 
   /* Certification */
      .certi {
-      background-image: url('./Assets/Images/TCD-Guide.png');
+      background-image: url('./Assets/Image/TCD-Guide.png');
       background-size: cover;
       background-position: center;
       /* color: #fff; */
@@ -222,7 +267,7 @@
      
 /* States */
 .stats-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./Assets/Images/statics.png') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./Assets/Image/HomeStrips.png') no-repeat center center;
             background-size: cover;
             color: white;
             padding: 60px 0;
@@ -246,32 +291,6 @@
   color: white;
 }
 
-/* Ratings */
-.reviews-section {
-  background-color: #196DB9;
-  padding-top: 2vw;
-  color: #fff;
-}
-.review-icon {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-.review-card {
-  background: transparent;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease-in-out;
-  text-align: center;
-}
-.review-card:hover {
-  transform: translateY(-10px);
-}
-.review-content {
-  text-align: center;
-}
 
 
 /* Reviews */
@@ -285,7 +304,7 @@
    position: relative;
    color: white;
    padding: 5rem 1rem;
-   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),  url('./Assets/Images/saftey.png');
+   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),  url('./Assets/Image/saftey.png');
    background-size: cover;
    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
       }
@@ -303,6 +322,9 @@
     position: relative;
     z-index: 2;
       }
+  .list-unstyled, li {
+    margin-bottom: 0.5vw;
+  }
 
       
 /* Service */
