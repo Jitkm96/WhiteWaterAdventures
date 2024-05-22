@@ -211,7 +211,15 @@
         border-width: 5px;
         border-radius: 20px;
       }
+      .lead2{
+        font-family: ;
+        font-weight: 100%;
+        font-style: normal;
+        border-radius: 20px;
 
+      }
+
+     
 /* States */
 .stats-section {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./Assets/Images/statics.png') no-repeat center center;
@@ -572,7 +580,7 @@
 /* Phochhu and mochhu */
 .gallery_button{
   position: absolute;
-  right: 80px;
+  left: 80%;
    
 }
 
