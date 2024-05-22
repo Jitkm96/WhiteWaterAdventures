@@ -129,7 +129,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the tint color and opacity */
+  /* background: rgba(0, 0, 0, 0.5); */
 }
 
 .img-overlay .overlay-text {
@@ -137,9 +137,11 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 25%;
   color: #fff; /* Text color */
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.5); /* Background tint for the text */
+  padding-left: 10px;
+  padding-top: 10px;
+  background: rgba(0, 0, 0, 0.8); /* Background tint for the text */
   text-align: left;
 }
 .ser {
@@ -156,7 +158,8 @@
 }
 
 .smalldetail, .smalldetails {
-  margin: 5px 0;
+  margin: 2px 0;
+  margin-top: 0;
   font-size: small;
   padding-left: 0.5vw;
 }
