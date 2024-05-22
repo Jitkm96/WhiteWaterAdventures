@@ -73,36 +73,14 @@
 .banner h1 {
   text-align: left;
   margin-left: 10vw;
-  color: #e65c00;
+  margin-top: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-style: normal;
   margin-right: 0;
   padding: 0;
-  font-size: 5vw; /* Use viewport width for a responsive base font size */
 }
 
-/* Responsive adjustments for larger screens */
-@media (min-width: 1200px) {
-  .banner h1 {
-    font-size: 4em; /* Adjust font size for very large screens */
-  }
-}
-
-/* Responsive adjustments for tablets */
-@media (max-width: 768px) {
-  .banner h1 {
-    font-size: 6vw; /* Adjust font size for tablets */
-  }
-}
-
-/* Responsive adjustments for mobile phones */
-@media (max-width: 480px) {
-  .banner h1 {
-    font-size: 8vw; /* Adjust font size for mobile phones */
-    margin-left: 5vw; /* Adjust margin for smaller screens */
-  }
-}
 
   /* Home Page */
   .bn {
