@@ -105,10 +105,31 @@
 }
 .subtitle {
   text-align: center;
-  margin-top: 3vw;
+  /* margin-top: 3vw; */
   color: #575757;
   font-weight: 300;
 }
+@media (min-width: 800px) and (max-width: 1050px) {
+  .static-caption {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    z-index: 10;
+  }
+}
+@media (max-width: 600px) {
+  .static-caption {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    z-index: 10;
+  }
+}
+
 
 /* Card */
 .img-overlay {
@@ -202,13 +223,12 @@
       background-image: url('./Assets/Image/TCD-Guide.png');
       background-size: cover;
       background-position: center;
-      /* color: #fff; */
-      padding: 100px 0;
+      /* padding: 100px 0; */
       text-align: center;
       display: flex;
       justify-content: left;
       align-items: center;
-      padding: 5vw;
+      /* padding: 5vw; */
       margin-left: 5vw;
   }
   .certi-content {
@@ -328,8 +348,13 @@
 
       
 /* Service */
+.Feat {
+  background-color: #e8e8e8;
+}
+
 .sv {
   border: none;
+  background-color: #e8e8e8;
 }
 
 /* Form */
@@ -420,7 +445,7 @@
       margin-bottom: 0;
   }
 }
- 
+
 
  /* Date */
  .date-input {
@@ -438,6 +463,50 @@
    font-weight: bold; /* Make label bold when checkbox is checked */
    color: #e65c00;
  }
+
+ /* Process */
+ .tooltip-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tooltip-icon {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tooltip-dialog {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+  width: 400px;
+  top: 100%;
+  left: 0;
+}
+
+.tooltip-dialog p {
+  margin: 0;
+}
+
+.tooltip-dialog:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: calc(50% - 5px);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #ddd transparent;
+}
+
+
  
  /* Refund policy */
  /* Base styles for .refundbox */
@@ -495,6 +564,8 @@
    }
  }
 
+
+
  /* Contact */
  .contact {
   text-align: center;
@@ -522,16 +593,16 @@
 .US { width: 210px;
   height: 170px;
   border-radius: 20px;
-  background-color: #196DB9;
+  background-color: #e65c00;
   color: #f9f9f9;
 }
 .US:hover:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 15px #b64e09(0, 123, 255, 0.5);
 }
 .US.selected {
-  border: 2px solid #007bff;
-  box-shadow: 0 0 15px rgba(0, 123, 255, 0.75);
+  border: 2px solid #e65c00;
+  box-shadow: 0 0 15px rgba(167, 91, 9, 0.75);
 }
 
 .US p {
@@ -598,8 +669,9 @@
 }
 
 .submit-btn:hover {
-  background-color: #e65c00;
+  background-color: #196DB9;
 }
+
 
 .btnsad {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
