@@ -100,10 +100,9 @@
   text-align: center; 
   z-index: 10;
 }
-
-
-
-
+.bannertxt {
+  text-align: left;
+}
 .subtitle {
   text-align: center;
   margin-top: 3vw;
