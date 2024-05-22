@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Adventure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+  <style>
+    .banner {
+      background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("./Assets/Images/IMG_8938.png");
+}
+
+.carousel-item{
+    background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+  height:500px;
+  position:relative;
+}
+
+.homeSlide1_img{
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("./Assets/Images/IMG_4314.png");
+}
+
+.homeSlide2_img{
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("./Assets/Images/IMG_0437.png");
+}
+
+.homeSlide3_img{
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("./Assets/Images/IMG_8822.PNG");
+}
+
+.carousel-caption{
+  bottom:6.25rem;
+}
+
+.container{
+  width: 100%;
+border-color: rgb(77, 51, 51);
+margin: 100px;
+padding: 0px;
+   
+}
+.g {
+  font-weight: bold;
+}
+  </style>
+
+</head>
+<body>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+
+	<script type="text/javascript" >
+		//<!-- start navigation -->
+		$.get("Nav.html", function(data){
+			$("#navigation").replaceWith(data);
+		});
+
+		// <!-- start footer -->
+		$.get("Footer.html", function(data){
+			$("#footer").replaceWith(data);
+		});
+		
+	</script>
+  <!-- nav -->
+   
+  <div id="navigation"></div>
+
+  <!-- nav -->
+
+
+
+    <main>
+
+        <!-- section -->
+        <div class="banner">
+          <h1>Gallery</h1></div>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item homeSlide1_img active">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                </div>
+              </div>
+            </div>
+  
+            <div class="carousel-item homeSlide3_img">
+              <div class="container">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      <!-- container -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 container">
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_0077.png" alt="">
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                <div class="card-body">
+                    <p class="card-text">
+                        Begin your rafting adventure at Riverside with a guide briefing. The gentle river flow suits all skill levels. Surrounded by lush greenery and distant rapids, enjoy breathtaking scenery as your journey begins.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_0095.png" alt="">
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                <div class="card-body">
+                    <p class="card-text">
+                        Your rafting adventure ends at Changyel. Reflect on your journey amid the final rapids and sense of achievement. Unwind, share stories, and enjoy the serene riverside beauty before disembarking.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_4314.png" alt="">
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                <div class="card-body">
+                    <p class="card-text">
+                        Family packages often include extra activities and amenities to keep children entertained, such as games and tours, whereas individual packages focus more on the thrilling rafting experience itself and skill development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_1437.png" alt="">
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                <div class="card-body">
+                    <p class="card-text">
+                        The individual package offers solo adventurers or groups a highly personalized rafting experience, with enhanced flexibility and extensive customization options tailored specifically to their individual skill levels, interests, and unique preferences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_4240.png" alt="">
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                <div class="card-body">
+                    <p class="card-text">
+                        The family package ensures a fun, safe rafting adventure suitable for all ages. It includes special features and accommodations specifically tailored for families, catering to the needs of children, teenagers, and older adults alike.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_4238.png" alt="">
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                <div class="card-body">
+                    <p class="card-text">
+                        Join the individual rafting package, forge memories, and build connections with others or strangers, all while navigating the waterways. Embark on the individual package, rafting alongside others or strangers, creating indelible memories.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_0437.png" alt="">
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                <div class="card-body">
+                    <p class="card-text">
+                        The individual package is designed for solo adventurers or groups of friends seeking a more personalized and intense rafting experience. It offers flexibility and customization options tailored to individual skill levels and preferences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_0702.png" alt="">
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                <div class="card-body">
+                    <p class="card-text">
+                        Family packages include safety gear specifically tailored for children, ensuring proper fit and enhanced safety. In contrast, individual packages provide standard gear suitable for adult adventurers and their unique needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 container">
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/image/activites-rafting-ami-veneon-1-1920x960.jpg" alt="">
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <div class="card-body">
+              <p class="card-text">
+             Begin your rafting adventure at Riverside with a guide briefing. The gentle river flow suits all skill levels. Surrounded by lush greenery and distant rapids, enjoy breathtaking scenery as your journey begins.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/image/activites-rafting-ami-veneon-1-1920x960.jpg" alt="">
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <div class="card-body">
+              <p class="card-text">Your rafting adventure ends at changyel. Reflect on your journey amid the final rapids and sense of achievement. Unwind, share stories, and enjoy the serene riverside beauty before disembarking.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/image/activites-rafting-ami-veneon-1-1920x960.jpg" alt="">
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <div class="card-body">
+              <p class="card-text">Family packages often include extra activities and amenities to keep children entertained, such as games and tours, whereas individual packages focus more on the thrilling rafting experience itself and skill development.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/image/rafting.jpg" alt="">
+           <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+           </text>
+            <div class="card-body">
+              <p class="card-text"> The individual package offers solo adventurers or groups a highly personalized rafting experience, with enhanced flexibility and extensive customization options tailored specifically to their individual skill levels, interests, and unique preferences.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/image/rafting.jpg" alt="">
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+            </text>
+            <div class="card-body">
+              <p class="card-text">The family package ensures a fun, safe rafting adventure suitable for all ages. It includes special features and accommodations specifically tailored for families, catering to the needs of children, teenagers, and older adults alike.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/image/rafting.jpg" alt="">
+          <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+          </text>
+            <div class="card-body">
+              <p class="card-text">Join the individual rafting package, forge memories, and build connections with others or strangers, all while navigating the waterways.Embark on the individual package, rafting alongside others or strangers, creating indelible memories.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/image/Water-and-Flood-Team-Leader-WFTL-–-Rescue-3-Europe-2-1440x960.jpg" alt="">
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+            </text>
+            <div class="card-body">
+              <p class="card-text">The individual package is designed for solo adventurers or groups of friends seeking a more personalized and intense rafting experience. It offers flexibility and customization options tailored to individual skill levels and preferences.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/image/Water-and-Flood-Team-Leader-WFTL-–-Rescue-3-Europe-2-1440x960.jpg" alt="">
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <div class="card-body">
+              <p class="card-text">Family packages include safety gear specifically tailored for children, ensuring proper fit and enhanced safety. In contrast, individual packages provide standard gear suitable for adult adventurers and their unique needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+     </div> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+      </main>
+      <!-- Footer -->
+
+<div id="footer"></div>
+
+<!-- Footer -->
+     
+        
+  </body>
+</html>

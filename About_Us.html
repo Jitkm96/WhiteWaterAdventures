@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Adventure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      .banner {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("./Assets/Images/IMG_4240.png");
+}
+
+.container.items {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 10vh;  
+}
+.card {
+border-color: rgb(179, 164, 164); 
+}
+.a {
+  font-weight: bold;
+}
+    </style>
+  </head>
+<body>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+
+	<script type="text/javascript" >
+		//<!-- start navigation -->
+		$.get("Nav.html", function(data){
+			$("#navigation").replaceWith(data);
+		});
+
+		// <!-- start footer -->
+		$.get("Footer.html", function(data){
+			$("#footer").replaceWith(data);
+		});
+		
+	</script>
+  <!-- nav -->
+   
+  <div id="navigation"></div>
+
+  <!-- nav -->
+
+
+  <!--  About Us  -->
+   <!-- banner -->
+   <div class="banner">
+    <h1>About Us</h1></div>
+      
+    <div class="container Text">
+    <h6>  <p>White Water Rafting Adventure, based in Punakha, Bhutan.
+        offers thrilling rafting trips on the Phochhu and Mochhu Rivers.</p> <p>Known for their commitment to safety, professionalism, and environmental sustainability, they provide unforgettable experiences amidst breathtaking landscapes.</p> As one of the top rafting companies in Punakha Dzongkhag, they employ experienced guides trained in river safety, first aid, and rafting techniques. These guides lead groups through rapids, ensuring a safe and exhilarating adventure for all ages.</p></h6>
+    </div>
+
+<!-- Staff details -->
+     
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <h1 class="text-body-emphasis staff-details">Staff details</h1>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_6044.png" alt=" Tenzin img">
+                <div class="card-body">
+                  <p class="card-text"> <b>Mr. Tenzin</b> (Manager)</p>
+                  <p><h6>Years of experiences: 7 </p></h6>
+                 <p><h6>Certificate: safety protocols, Boating License.</p></h6>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_5391.png" alt=" Sonam img">
+                <div class="card-body">
+                  <p class="card-text"> <b>Mr. Sonam</b> (Rafting Guide)</p>
+                  <p><h6>Years of experiences: 5 </p></h6>
+                 <p><h6>Certificate: Life Guard, First Aid and CPR.</p></h6>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group"> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./Assets/Images/IMG_6114.png" alt="Sangay img">
+                <div class="card-body">
+                  <p class="card-text"> <b>Mr. Sangay</b> (Rafting Guide)</p>
+            
+                  <p><h6>Years of experiences: 6 </p></h6>
+                  <p><h6>Certificate: Life Guide, Swiftwater Rescue.</p></h6>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <body>
+        <div class="container items">
+            <p>
+                <a href="./contact.html" class="btn btn-primary my-2 box">Inquire</a>
+                <a href="./Form.html" class="btn btn-secondary my-2 orange">Book Now</a>
+            </p>
+        </div>
+    </body>
+<!-- Footer -->
+
+<div id="footer"></div>
+
+<!-- Footer -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+ </body>
+</html>
+
+
+
