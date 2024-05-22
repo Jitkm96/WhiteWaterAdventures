@@ -106,6 +106,8 @@
 .subtitle {
   text-align: center;
   margin-top: 3vw;
+  color: #575757;
+  font-weight: 300;
 }
 
   .card {
