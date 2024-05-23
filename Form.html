@@ -416,66 +416,96 @@ document.addEventListener('DOMContentLoaded', function() {
             separateDialCode: true
         });
 // Process
-document.addEventListener('DOMContentLoaded', function() {
-    const countryList = ["USA", "Canada", "UK", "Australia", "Germany", "India"];
-    const countrySelect = document.getElementById('country');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const countryList = ["USA", "Canada", "UK", "Australia", "Germany", "India"];
+//     const countrySelect = document.getElementById('country');
 
-    countryList.forEach(country => {
-        const option = document.createElement('option');
-        option.value = country;
-        option.textContent = country;
-        countrySelect.appendChild(option);
-    });
-});
+//     countryList.forEach(country => {
+//         const option = document.createElement('option');
+//         option.value = country;
+//         option.textContent = country;
+//         countrySelect.appendChild(option);
+//     });
+// });
 
-document.querySelectorAll('.selectable-card').forEach(card => {
-    card.addEventListener('click', function() {
-        document.querySelectorAll('.selectable-card').forEach(c => c.classList.remove('selected'));
-        card.classList.add('selected');
-        card.querySelector('input[type="radio"]').checked = true;
-    });
-});
+// document.querySelectorAll('.selectable-card').forEach(card => {
+//     card.addEventListener('click', function() {
+//         document.querySelectorAll('.selectable-card').forEach(c => c.classList.remove('selected'));
+//         card.classList.add('selected');
+//         card.querySelector('input[type="radio"]').checked = true;
+//     });
+// });
 
-function toggleQuantityInput(inputId, checkbox) {
-    const input = document.getElementById(inputId);
-    input.style.display = checkbox.checked ? 'inline-block' : 'none';
-}
+// function toggleQuantityInput(inputId, checkbox) {
+//     const input = document.getElementById(inputId);
+//     input.style.display = checkbox.checked ? 'inline-block' : 'none';
+// }
 
-function sendMessage() {
+// function sendMessage() {
+//     const form = document.getElementById('adventureForm');
+//     const selectedOption = document.querySelector('input[name="customRadio"]:checked');
+//     const date = document.getElementById('date').value;
+//     const name = document.getElementById('name').value;
+//     const age = document.getElementById('age').value;
+//     const country = document.getElementById('country').value;
+//     const phone = document.getElementById('phone').value;
+//     const emergencyPhone = document.getElementById('emergencyPhone').value;
+//     const email = document.getElementById('email').value;
+
+//     let menuItems = "";
+//     const checkboxes = form.querySelectorAll('input[type="checkbox"]:checked');
+//     checkboxes.forEach(checkbox => {
+//         const itemName = checkbox.nextElementSibling.textContent;
+//         const quantity = checkbox.nextElementSibling.nextElementSibling.value;
+//         menuItems += `${itemName} (Quantity: ${quantity})\n`;
+//     });
+
+//     const whatsappMessage = `
+//         Adventure Option: ${selectedOption ? selectedOption.value : "None"}
+//         Date: ${date}
+//         Name: ${name}
+//         Age: ${age}
+//         Country: ${country}
+//         Phone: ${phone}
+//         Emergency Phone: ${emergencyPhone}
+//         Email: ${email}
+//         Add-Ons:
+//         ${menuItems}
+//     `;
+
+//     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
+//     window.open(whatsappUrl, '_blank');
+// }
+
+function sendDetailsToWhatsApp() {
     const form = document.getElementById('adventureForm');
-    const selectedOption = document.querySelector('input[name="customRadio"]:checked');
-    const date = document.getElementById('date').value;
-    const name = document.getElementById('name').value;
-    const age = document.getElementById('age').value;
-    const country = document.getElementById('country').value;
-    const phone = document.getElementById('phone').value;
-    const emergencyPhone = document.getElementById('emergencyPhone').value;
-    const email = document.getElementById('email').value;
+    const name = form.name.value;
+    const age = form.age.value;
+    const country = form.country.value;
+    const phone = form.phone.value;
+    const emergencyPhone = form.emergencyPhone.value;
+    const email = form.email.value;
+    const date = form.date.value;
+    const adventure = form.customRadio.value;
 
-    let menuItems = "";
-    const checkboxes = form.querySelectorAll('input[type="checkbox"]:checked');
-    checkboxes.forEach(checkbox => {
-        const itemName = checkbox.nextElementSibling.textContent;
-        const quantity = checkbox.nextElementSibling.nextElementSibling.value;
-        menuItems += `${itemName} (Quantity: ${quantity})\n`;
+    let message = `Name: ${name}\nAge: ${age}\nCountry: ${country}\nPhone: ${phone}\nEmergency Phone: ${emergencyPhone}\nEmail: ${email}\nDate: ${date}\nAdventure: ${adventure}\nAdd-Ons:\n`;
+
+    form.querySelectorAll('.form-check-input').forEach(input => {
+        if (input.checked) {
+            const quantityInput = document.getElementById(input.id + 'Quantity');
+            if (quantityInput) {
+                message += `${input.labels[0].innerText}: ${quantityInput.value}\n`;
+            } else {
+                message += `${input.labels[0].innerText}\n`;
+            }
+        }
     });
 
-    const whatsappMessage = `
-        Adventure Option: ${selectedOption ? selectedOption.value : "None"}
-        Date: ${date}
-        Name: ${name}
-        Age: ${age}
-        Country: ${country}
-        Phone: ${phone}
-        Emergency Phone: ${emergencyPhone}
-        Email: ${email}
-        Add-Ons:
-        ${menuItems}
-    `;
-
-    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
+    const yourWhatsAppNumber = '97577383218'; // Replace with your WhatsApp number in international format without '+'
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${yourWhatsAppNumber}&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
+
 
 
 
