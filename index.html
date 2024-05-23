@@ -39,19 +39,19 @@
           }
 /* Crousal */
 .homeSlide1_img {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./Assets/Images/IMG_6506.png");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./Assets/Image/Herobanner1.png");
     background-size: cover;
     background-position: center;
 }
 
 .homeSlide2_img {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./Assets/Images/IMG_8825.PNG");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./Assets/Image/HomeBanner2.png");
     background-size: cover;
     background-position: center;
 }
 
 .homeSlide3_img {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./Assets/Images/IMG_8822.PNG");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./Assets/Image/HomeBanner3.png");
     background-size: cover;
     background-position: center;
 }
@@ -86,7 +86,7 @@
   <!-- nav -->
 
 <!-- Banner -->
-<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
@@ -96,29 +96,14 @@
     <div class="carousel-item homeSlide1_img active bn">
       <div class="container">
         <div class="carousel-caption text-start">
-          <!-- <h2>Your Premier Destination for 
-            Heart-Pounding Rafting 
-            Expeditions!</h2>
-          <p><a class="btn btn-lg btn-primary btnsad" href="./Form.html">Book</a></p> -->
         </div>
       </div>
     </div>
     <div class="carousel-item homeSlide2_img bn">
       <div class="container">
-        <!-- <div class="carousel-caption">
-          <h1>Learn More About Our Passion for Adventure</h1>
-          <p><a class="btn btn-lg btn-primary btnsad" href="./About_Us.html">About Us</a></p>
-        </div> -->
       </div>
     </div>
     <div class="carousel-item homeSlide3_img bn">
-      <!-- <div class="container">
-        <div class="carousel-caption text-end">
-          
-          <h2>Explore the Thrill: View Our Exciting Rafting Adventure Gallery!</h2>
-          <p><a class="btn btn-lg btn-primary btnsad" href="./gallary.html">Browse gallery</a></p>
-        </div>
-      </div> -->
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -132,9 +117,9 @@
 </div>
 <div class="static-caption container text-left">
   <div class="carousel-caption text-left">
-    <h1 class="text-left"><b>Bhutan, Punakha</b></h1>
-    <h2 class="text-left">Your Premier Destination for Heart-Pounding Rafting Expeditions!</h2>
-    <p><a class="btn btn-lg btn-primary btnsad" href="./Form.html">Book</a></p>
+    <h1 class="bannertxt"><b>Bhutan, Punakha</b></h1>
+    <h2 class="bannertxt">Your Premier Destination for Heart-Pounding Rafting Expeditions!</h2>
+    <p class="bannertxt" style="margin-top: 50px;"><a class="btn btn-lg btn-primary btnsad" href="./Form.html">Book</a></p>
   </div>
 </div>
 </div>
@@ -143,46 +128,58 @@
     <!-- 2 section -->
     <div class="subtitle">
     <h2>Discover the Ultimate Rafting Experience with<br><span style="font-size: larger; font-weight: bolder; color: #196DB9;"> White Water Adventure!</span></h2>
-    <div class="album py-5 bg-body-primary">
-        <div class="container">
     
-          <div class="row row-cols-1 row-cols-sm-2  g-3">
-            <div class="col">
-              <div class="card ser">
-                <img class="bd-placeholder-img card-img-top rftimg" width="100%" height="300" src="./Assets/Images/Pochhu.JPG" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="10  0%" height="100%" fill="#FF7A00"></rect><text x="50%" y="50%" fill="#FF7A00" dy=".3em">
-                  <h4 style="text-align: left; color: #196DB9; padding-left: 1vw; margin-bottom: 0;" class="mt-3">Pochhu</h4></text></svg>
-                <div class="card-body">
-                  <p class="card-text" style="text-align: left;">The  Pochhu is  known for its thrilling rapids on the pochhu river which offers adventure  and exciting rafting services. </p>
-                  <p style="text-align: left;" class="smalldetail"><b>Difficulty: grade 4 rapids (Advanced)</b></p>
-                   <p style="text-align: left;" class="smalldetails"> Ideal for people looking for more challenging adventure.</p>
 
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="./Pho chhu.html"><button type="button" class="btn btn-sm btn-outline-secondary"><b>Read More</b></button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <!-- Cards -->
+    <div class="album py-5 bg-body-primary">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 g-3">
+      <div class="col">
+        <div class="card ser">
+          <div class="img-overlay">
+            <img class="bd-placeholder-img card-img-top rftimg" width="100%" height="300" src="./Assets/Image/Pochu.PNG" alt="Pochhu River">
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <p class="smalldetail">Difficulty: grade 4 rapids (Advanced)</p>
+              <p class="smalldetails">Ideal for people looking for more challenging adventure.</p>
             </div>
-            <div class="col">
-              <div class="card ser">
-                <img class="bd-placeholder-img card-img-top rftimg mimg" width="100%" height="300" src="./Assets/Images/Mochhu.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#FF7A00"></rect><text x="50%" y="50%" fill="#FF7A00" dy=".3em"> <h4 style="text-align: left; color: #196DB9; padding-left: 1vw; margin-bottom: 0;" class="mt-3">Mochhu</h4></text></svg>
-                <div class="card-body">
-                  <p class="card-text" style="text-align: left;">Explore the MoChhu river: a journey through breathtaking kingdom landscapes. </p>
-                  <p style="text-align: left;" class="smalldetail"><b>Difficulty: grade 1-2 rapids (Easy)</b></p>
-                   <p style="text-align: left;" class="smalldetails">Ideal for beginner and family. </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="./Mochhu.html"><button type="button" class="btn btn-sm btn-outline-secondary"><b>Read More</b></button></a>
-                    </div>
-                  </div>
-                </div>
+          </div>
+          <div class="card-body ser">
+            <h4 style="margin-top: 5px; margin-bottom: 2px;">Pochhu</h4>
+            <p class="card-text">The Pochhu is known for its thrilling rapids on the Pochhu river which offers adventure and exciting rafting services.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="./Pho chhu.html"><button type="button" class="btn btn-sm btn-outline-secondary"><b>Read More</b></button></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-  </div>
+      </div>
+      <div class="col">
+        <div class="card ser">
+          <div class="img-overlay">
+            <img class="bd-placeholder-img card-img-top rftimg" width="100%" height="300" src="./Assets/Image/Mochu.png" alt="Mochhu River">
+            <div class="overlay"></div>
+            <div class="overlay-text">
+              <p class="smalldetail">Difficulty: grade 1-2 rapids (Easy)</p>
+              <p class="smalldetails">Ideal for beginners and families.</p>
+            </div>
+          </div>
+          <div class="card-body ser">
+            <h4 style="margin-top: 5px; margin-bottom: 2px;">Mochhu</h4>
+            <p class="card-text">Explore the MoChhu river: a gentle, female river ideal for rafting. Embark on a journey through breathtaking landscapes.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="./Mochhu.html"><button type="button" class="btn btn-sm btn-outline-secondary"><b>Read More</b></button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <!-- States -->
   <!-- <h2 class="text mb-4 fnt" style="text-align: left;">Our Achievements</h2> -->
@@ -191,7 +188,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="stats-box">
-                    <div class="stats-number" data-target="1234">0</div>
+                    <div class="stats-number" data-target="10000">0</div>
                     <div class="stats-description">Total Services Provided</div>
                 </div>
             </div>
@@ -203,7 +200,7 @@
             </div>
             <div class="col-md-4">
                 <div class="stats-box">
-                    <div class="stats-number" data-target="10">0</div>
+                    <div class="stats-number" data-target="11">0</div>
                     <div class="stats-description">Years of Service</div>
                 </div>
             </div>
@@ -216,19 +213,19 @@
 <div class="reviews-section">
   <div class="container marketing">
       <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6">
               <div class="review-card">
                   <img class="review-icon" src="./Assets/Icons/social (1).png" alt="Google Reviews">
                   <div class='sk-ww-google-reviews' data-embed-id='25415512'></div>
               </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6">
               <div class="review-card">
                   <img class="review-icon" src="./Assets/Icons/facebook.png" alt="Facebook Reviews">
                   <div class='sk-ww-google-reviews' data-embed-id='25415512'></div>
               </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6">
               <div class="review-card">
                   <img class="review-icon" src="./Assets/Icons/social.png" alt="Social Media Reviews">
                   <div class='sk-ww-google-reviews' data-embed-id='25415512'></div>
@@ -243,44 +240,32 @@
 <section class="section certi">
   <div class="certi-content text-center">
       <img src="./Assets/Icons/TCB.png" alt="TCB Certification">
-      <h2 class="certi-header mt-4">We are Certified by the Tourism Council of Bhutan (TCB)</h2>
+      <h2 class="certi-header mt-4">We are Certified by the Tourism Council of Bhutan</h2>
       <p class="certi-description mt-3">Trust in Expertise: Your safety is our top priority. Our team of well-trained, experienced, and fun-loving river guides are true experts on these rivers. With us, you can enjoy the thrill of rafting with complete peace of mind, knowing that every safety detail has been taken care of.</p>
   </div>
 </section>
 
 
   <!-- Services -->
-  <div class="container" style="margin-top: 8vw; margin-bottom: 10vw;">
+  <section class="Feat py-5" >
+  <div class="container">
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card text-center h-100 sv">
           <div class="card-body">
             <div class="card-icon mb-3">
-              <img class="bd-placeholder-img" width="100" height="100" src="./Assets/Icons/verify.png" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <img class="bd-placeholder-img" width="100" height="100" src="./Assets/Icons/Photography.png" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
             </div>
             <h3 class="card-title pkg"><b>Photography</b></h3>
-            <p class="card-text">We help you capture memories with our phone.
-            </p>
+            <p class="card-text">We help capture unforgettable rafting memories with our or your phone.</p>
           </div>
         </div>
       </div>
-      <!-- <div class="col">
-        <div class="card text-center h-100">
-          <div class="card-body">
-            <div class="card-icon mb-3">
-              <img class="bd-placeholder-img" width="100" height="100" src="./Assets/Icons/premium-quality.png" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            </div>
-            <h3 class="card-title pkg"><b>Transportation</b></h3>
-            <p class="card-text">Don’t want the whole package. Well select from the services and create your won package!
-            </p>
-          </div>
-        </div>
-      </div> -->
       <div class="col">
         <div class="card text-center h-100 sv">
           <div class="card-body">
             <div class="card-icon mb-3">
-              <img class="bd-placeholder-img" width="100" height="100" src="./Assets/Icons/equalizer.png" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <img class="bd-placeholder-img" width="100" height="100" src="./Assets/Icons/Meal.png" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
             </div>
             <h3 class="card-title pkg"><b>Mid-route rest and meal</b></h3>
             <p class="card-text">Enhance your rafting adventure with a scenic mid-route rest stop and meal for an additional fee.
@@ -290,6 +275,7 @@
       </div>
     </div>
   </div>
+</section>
 
     <!-- Reviews -->
     <div style="background-color: #196DB9;padding-top: 3vw;">
