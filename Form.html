@@ -412,7 +412,14 @@ document.addEventListener('DOMContentLoaded', function() {
             separateDialCode: true
         });
 // Process
-
+function toggleQuantityInput(inputId, checkbox) {
+    var input = document.getElementById(inputId);
+    if (checkbox.checked) {
+        input.style.display = 'block';
+    } else {
+        input.style.display = 'none';
+    }
+} 
 
 
 
