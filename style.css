@@ -575,7 +575,7 @@
   text-align: center;
 }
 
-/* Banner */
+/* Contact */
 /* icon */
 .cnt {
   width: 50px;
@@ -679,6 +679,15 @@
 
 .btnsad {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+@media (max-width: 658px) {
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20vw;
+    margin-bottom: 10px;
+  }
 }
 
 

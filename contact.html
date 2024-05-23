@@ -97,13 +97,11 @@
               </div>
               <div class="form-group">
                 <label for="subject">Subject:</label>
-                <div class="custom-dropdown" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
-                    <select id="subject" name="subject" required style="width: 100%; padding: 10px; font-size: 16px; border: none; border-radius: 5px; background-color: #fff; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23888"><path d="M7 10l5 5 5-5z" /></svg>'); background-repeat: no-repeat; background-position: right 10px center; background-size: 24px; -webkit-appearance: none; -moz-appearance: none; appearance: none; padding-right: 40px;">
-                        <option value="">Select Subject</option>
-                        <option value="Feedback">Feedback</option>
-                        <option value="Inquiry">Inquiry</option>
-                    </select>
-                </div>
+                <select id="subject" name="subject" required class="form-control">
+                    <option value="">Select Subject</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Inquiry">Inquiry</option>
+                </select>
             </div>
               <div class="form-group">
                   <label for="message">Message:</label>
@@ -112,6 +110,7 @@
               <button type="submit" class="submit-btn btn">Submit</button>
           </form>
       </section>
+      
 
 
 
@@ -129,6 +128,30 @@
                   event.currentTarget.classList.add("active-link");
                   document.getElementById(tabname).classList.add("active-tab")
               }
+
+              // whatsapp
+              document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        sendDetailsToWhatsApp();
+    });
+});
+
+function sendDetailsToWhatsApp() {
+    const form = document.getElementById('contactForm');
+    const firstName = form['first-name'].value;
+    const lastName = form['last-name'].value;
+    const email = form.email.value;
+    const subject = form.subject.value;
+    const message = form.message.value;
+
+    const whatsappMessage = `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+
+    const yourWhatsAppNumber = '97577383218'; // Replace with your WhatsApp number without country code
+    const whatsappUrl = `https://wa.me/${yourWhatsAppNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
           
           </script>
           
