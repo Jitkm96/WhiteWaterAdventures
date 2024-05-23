@@ -91,6 +91,7 @@
 	position:relative;
 }
 
+
 /* crousel button and text */
 .static-caption {
   position: absolute;
@@ -105,7 +106,7 @@
 }
 .subtitle {
   text-align: center;
-  /* margin-top: 3vw; */
+  margin-top: 3vw;
   color: #575757;
   font-weight: 300;
 }
@@ -122,7 +123,7 @@
 @media (max-width: 600px) {
   .static-caption {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 40%;
     transform: translate(-50%, -50%);
     text-align: center; 
