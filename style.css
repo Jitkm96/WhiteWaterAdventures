@@ -489,8 +489,8 @@
   padding: 10px;
   z-index: 1;
   width: 400px;
-  top: 100%;
-  left: 0;
+  top: 20%;
+  left: 50%;
 }
 
 .tooltip-dialog p {
@@ -505,6 +505,12 @@
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent #ddd transparent;
+}
+.QM {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 

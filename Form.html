@@ -186,18 +186,8 @@
             </div>
 
             <!-- Section 4: Additional Options -->
-            <div class="form-section">              
-                <h4>Add-Ons:</h4>
-                <div class="tooltip-container">
-                    <button class="tooltip-icon" onmouseover="showTooltip()" onmouseout="hideTooltip()">?</button>
-                    <div class="tooltip-dialog" id="tooltipDialog">
-                        <ul><b>Process</b>
-                            <li>Upon sumitting the form our staff will shortly contact you on WhatsApp.</li>
-                            <li>We will quote the final cost of your booking selection</li>
-                            <li>Please record the journal number or screeshot of payment made.</li>
-                        <!-- Add more content or styling as needed -->
-                    </div>
-                      
+            <div class="form-section">             
+                <h4>Add-Ons:</h4>     
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="midRouteRest" name="midRouteRest" onclick="toggleDropdown()">
                     <label class="form-check-label" for="midRouteRest">
@@ -335,6 +325,16 @@
             
 
             <!-- Submit Button and Refund Policy -->
+            <div class="tooltip-container QM">
+                <button class="tooltip-icon" onmouseover="showTooltip()" onmouseout="hideTooltip()"><img src="./Assets/Icons/help.png" height="35px" width="35px"/></button>
+                <div class="tooltip-dialog text-left" id="tooltipDialog">
+                    <ul><b>Process</b>
+                        <li>Upon sumitting the form our staff will shortly contact you on WhatsApp.</li>
+                        <li>We will quote the final cost of your booking selection</li>
+                        <li>Please record the journal number or screeshot of payment made.</li>
+                    <!-- Add more content or styling as needed -->
+                </div> 
+            </div> 
             <div class="form-section text-center">  
                 <button type="submit" class="btn btn-primary submit">Submit</button>
                 <p class="refund-policy">
