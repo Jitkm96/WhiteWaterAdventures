@@ -114,7 +114,7 @@
                         <h5 class="card-title"><b>Mochhu</b></h5>
                         <p class="card-text">Ideal for beginner and family</p>
                         <div class="custom-control custom-radio">
-                          <input type="radio" id="radio1" name="customRadio" class="custom-control-input" value="Mochhu">
+                          <input type="radio" id="radio1" name="River" class="custom-control-input" value="Mochhu">
                           <label class="custom-control-label" for="radio1"></label>
                         </div>
                       </div>
@@ -127,7 +127,7 @@
                         <h5 class="card-title"><b>Pochhu</b></h5>
                         <p class="card-text">Ideal for those who loves challenges</p>
                         <div class="custom-control custom-radio">
-                          <input type="radio" id="radio2" name="customRadio" class="custom-control-input" value="Pochhu">
+                          <input type="radio" id="radio2" name="River" class="custom-control-input" value="Pochhu">
                           <label class="custom-control-label" for="radio2"></label>
                         </div>
                       </div>
@@ -141,7 +141,7 @@
             <div class="form-section">
                 <h4>Select Date:</h4>
                 <div class="form-group">
-                    <input type="date" class="form-control date-input" id="date" name="date" required>
+                    <input type="date" class="form-control date-input" id="date" name="Date" required>
                 </div>
             </div>
             
@@ -153,15 +153,15 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <input type="text" class="form-control" id="name" name="Name" required>
                     </div>
                     <div class="form-group col-md-2">
                         <label for="age">Age</label>
-                        <input type="number" class="form-control" id="age" name="age" min="1" required>
+                        <input type="number" class="form-control" id="age" name="Age" min="1" required>
                     </div>
                     <div class="form-group col-md-4">
                         <label for="country">Country</label>
-                        <select class="form-control" id="country" name="country" required>
+                        <select class="form-control" id="country" name="Country" required>
                             <option value="" selected disabled>Select your country</option>
                         </select>
                     </div>
@@ -169,11 +169,11 @@
                 <div class="form-row">
                   <div class="form-group col-md-6">
                       <label for="phone">Phone Number (connected to your WhatsApp)</label>
-                      <input type="tel" class="form-control" id="phone" name="phone" required>
+                      <input type="tel" class="form-control" id="phone" name="Phone" required>
                   </div>
                   <div class="form-group col-md-6">
                       <label for="emergencyPhone">Secondary Emergency Phone Number</label>
-                      <input type="tel" class="form-control" id="emergencyPhone" name="emergencyPhone" required>
+                      <input type="tel" class="form-control" id="emergencyPhone" name="EmergencyPhone" required>
                   </div>
               </div>
 
@@ -181,7 +181,7 @@
                 
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <input type="email" class="form-control" id="email" name="Email" required>
                 </div>
             </div>
 
@@ -198,129 +198,130 @@
                 </div>          
             
             
-              <div class="dropdown-content" id="dropdownContent">
-                  <div class="menu-group" id="locals">
-                      <h5>Locals:</h5>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="rice" name="rice" onclick="toggleQuantityInput('riceQuantity', this)">
-                          <label class="form-check-label" for="rice">Rice</label>
-                          <input class="quantity-input" type="number" id="riceQuantity" name="riceQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="emaDatshi" name="emaDatshi" onclick="toggleQuantityInput('emaDatshiQuantity', this)">
-                          <label class="form-check-label" for="emaDatshi">Ema Datshi</label>
-                          <input class="quantity-input" type="number" id="emaDatshiQuantity" name="emaDatshiQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="kewaDatshi" name="kewaDatshi" onclick="toggleQuantityInput('kewaDatshiQuantity', this)">
-                          <label class="form-check-label" for="kewaDatshi">Kewa Datshi</label>
-                          <input class="quantity-input" type="number" id="kewaDatshiQuantity" name="kewaDatshiQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="steamVeg" name="steamVeg" onclick="toggleQuantityInput('steamVegQuantity', this)">
-                          <label class="form-check-label" for="steamVeg">Steam Veg</label>
-                          <input class="quantity-input" type="number" id="steamVegQuantity" name="steamVegQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="porkPa" name="porkPa" onclick="toggleQuantityInput('porkPaQuantity', this)">
-                          <label class="form-check-label" for="porkPa">Pork Pa</label>
-                          <input class="quantity-input" type="number" id="porkPaQuantity" name="porkPaQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="chickenCurry" name="chickenCurry" onclick="toggleQuantityInput('chickenCurryQuantity', this)">
-                          <label class="form-check-label" for="chickenCurry">Chicken Curry</label>
-                          <input class="quantity-input" type="number" id="chickenCurryQuantity" name="chickenCurryQuantity" min="1" value="1">
-                      </div>
-                  </div>
-      
-                  <div class="menu-group" id="international">
-                      <h5>International:</h5>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="riceIntl" name="riceIntl" onclick="toggleQuantityInput('riceIntlQuantity', this)">
-                          <label class="form-check-label" for="riceIntl">Rice</label>
-                          <input class="quantity-input" type="number" id="riceIntlQuantity" name="riceIntlQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="noodles" name="noodles" onclick="toggleQuantityInput('noodlesQuantity', this)">
-                          <label class="form-check-label" for="noodles">Noodles</label>
-                          <input class="quantity-input" type="number" id="noodlesQuantity" name="noodlesQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="beefSlicedFried" name="beefSlicedFried" onclick="toggleQuantityInput('beefSlicedFriedQuantity', this)">
-                          <label class="form-check-label" for="beefSlicedFried">Beef Sliced Fried</label>
-                          <input class="quantity-input" type="number" id="beefSlicedFriedQuantity" name="beefSlicedFriedQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="chickenChilli" name="chickenChilli" onclick="toggleQuantityInput('chickenChilliQuantity', this)">
-                          <label class="form-check-label" for="chickenChilli">Chicken Chilli</label>
-                          <input class="quantity-input" type="number" id="chickenChilliQuantity" name="chickenChilliQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="steamAsparagus" name="steamAsparagus" onclick="toggleQuantityInput('steamAsparagusQuantity', this)">
-                          <label class="form-check-label" for="steamAsparagus">Steam Asparagus</label>
-                          <input class="quantity-input" type="number" id="steamAsparagusQuantity" name="steamAsparagusQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="bhutaneseItem" name="bhutaneseItem" onclick="toggleQuantityInput('bhutaneseItemQuantity', this)">
-                          <label class="form-check-label" for="bhutaneseItem">Bhutanese Item</label>
-                          <input class="quantity-input" type="number" id="bhutaneseItemQuantity" name="bhutaneseItemQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="soupOrDal" name="soupOrDal" onclick="toggleQuantityInput('soupOrDalQuantity', this)">
-                          <label class="form-check-label" for="soupOrDal">Soup or Dal</label>
-                          <input class="quantity-input" type="number" id="soupOrDalQuantity" name="soupOrDalQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="dessertFruits" name="dessertFruits" onclick="toggleQuantityInput('dessertFruitsQuantity', this)">
-                          <label class="form-check-label" for="dessertFruits">Dessert: Fruits</label>
-                          <input class="quantity-input" type="number" id="dessertFruitsQuantity" name="dessertFruitsQuantity" min="1" value="1">
-                      </div>
-                  </div>
-      
-                  <div class="menu-group" id="regional">
-                      <h5>Regional:</h5>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="riceRegional" name="riceRegional" onclick="toggleQuantityInput('riceRegionalQuantity', this)">
-                          <label class="form-check-label" for="riceRegional">Rice</label>
-                          <input class="quantity-input" type="number" id="riceRegionalQuantity" name="riceRegionalQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="sukhaRoti" name="sukhaRoti" onclick="toggleQuantityInput('sukhaRotiQuantity', this)">
-                          <label class="form-check-label" for="sukhaRoti">Sukha Roti</label>
-                          <input class="quantity-input" type="number" id="sukhaRotiQuantity" name="sukhaRotiQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="aluSabji" name="aluSabji" onclick="toggleQuantityInput('aluSabjiQuantity', this)">
-                          <label class="form-check-label" for="aluSabji">ALU Sabji</label>
-                          <input class="quantity-input" type="number" id="aluSabjiQuantity" name="aluSabjiQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="paneerGravy" name="paneerGravy" onclick="toggleQuantityInput('paneerGravyQuantity', this)">
-                          <label class="form-check-label" for="paneerGravy">Paneer Gravy</label>
-                          <input class="quantity-input" type="number" id="paneerGravyQuantity" name="paneerGravyQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="chickenGravy" name="chickenGravy" onclick="toggleQuantityInput('chickenGravyQuantity', this)">
-                          <label class="form-check-label" for="chickenGravy">Chicken Gravy</label>
-                          <input class="quantity-input" type="number" id="chickenGravyQuantity" name="chickenGravyQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="kewaDatshiRegional" name="kewaDatshiRegional" onclick="toggleQuantityInput('kewaDatshiRegionalQuantity', this)">
-                          <label class="form-check-label" for="kewaDatshiRegional">Kewa Datshi</label>
-                          <input class="quantity-input" type="number" id="kewaDatshiRegionalQuantity" name="kewaDatshiRegionalQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="dal" name="dal" onclick="toggleQuantityInput('dalQuantity', this)">
-                          <label class="form-check-label" for="dal">Dal</label>
-                          <input class="quantity-input" type="number" id="dalQuantity" name="dalQuantity" min="1" value="1">
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="dessertSweets" name="dessertSweets" onclick="toggleQuantityInput('dessertSweetsQuantity', this)">
-                          <label class="form-check-label" for="dessertSweets">Dessert: Sweets</label>
-                          <input class="quantity-input" type="number" id="dessertSweetsQuantity" name="dessertSweetsQuantity" min="1" value="1">
-                      </div>
-                  </div>
-              </div>
+                <div class="menu-container">
+                    <div class="menu-group" id="locals">
+                        <h5>Locals:</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rice" name="rice" onclick="toggleQuantityInput('rice:', this)">
+                            <label class="form-check-label" for="rice">Rice</label>
+                            <input class="quantity-input" type="number" id="riceQuantity" name="rice:" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="emaDatshi" name="emaDatshi" onclick="toggleQuantityInput('emaDatshiQuantity', this)">
+                            <label class="form-check-label" for="emaDatshi">Ema Datshi</label>
+                            <input class="quantity-input" type="number" id="emaDatshiQuantity" name="emaDatshiQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="kewaDatshi" name="kewaDatshi" onclick="toggleQuantityInput('kewaDatshiQuantity', this)">
+                            <label class="form-check-label" for="kewaDatshi">Kewa Datshi</label>
+                            <input class="quantity-input" type="number" id="kewaDatshiQuantity" name="kewaDatshiQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="steamVeg" name="steamVeg" onclick="toggleQuantityInput('steamVegQuantity', this)">
+                            <label class="form-check-label" for="steamVeg">Steam Veg</label>
+                            <input class="quantity-input" type="number" id="steamVegQuantity" name="steamVegQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="porkPa" name="porkPa" onclick="toggleQuantityInput('porkPaQuantity', this)">
+                            <label class="form-check-label" for="porkPa">Pork Pa</label>
+                            <input class="quantity-input" type="number" id="porkPaQuantity" name="porkPaQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="chickenCurry" name="chickenCurry" onclick="toggleQuantityInput('chickenCurryQuantity', this)">
+                            <label class="form-check-label" for="chickenCurry">Chicken Curry</label>
+                            <input class="quantity-input" type="number" id="chickenCurryQuantity" name="chickenCurryQuantity" min="1" value="1">
+                        </div>
+                    </div>
+                
+                    <div class="menu-group" id="international">
+                        <h5>International:</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="riceIntl" name="riceIntl" onclick="toggleQuantityInput('riceIntlQuantity', this)">
+                            <label class="form-check-label" for="riceIntl">Rice</label>
+                            <input class="quantity-input" type="number" id="riceIntlQuantity" name="riceIntlQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="noodles" name="noodles" onclick="toggleQuantityInput('noodlesQuantity', this)">
+                            <label class="form-check-label" for="noodles">Noodles</label>
+                            <input class="quantity-input" type="number" id="noodlesQuantity" name="noodlesQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="beefSlicedFried" name="beefSlicedFried" onclick="toggleQuantityInput('beefSlicedFriedQuantity', this)">
+                            <label class="form-check-label" for="beefSlicedFried">Beef Sliced Fried</label>
+                            <input class="quantity-input" type="number" id="beefSlicedFriedQuantity" name="beefSlicedFriedQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="chickenChilli" name="chickenChilli" onclick="toggleQuantityInput('chickenChilliQuantity', this)">
+                            <label class="form-check-label" for="chickenChilli">Chicken Chilli</label>
+                            <input class="quantity-input" type="number" id="chickenChilliQuantity" name="chickenChilliQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="steamAsparagus" name="steamAsparagus" onclick="toggleQuantityInput('steamAsparagusQuantity', this)">
+                            <label class="form-check-label" for="steamAsparagus">Steam Asparagus</label>
+                            <input class="quantity-input" type="number" id="steamAsparagusQuantity" name="steamAsparagusQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="bhutaneseItem" name="bhutaneseItem" onclick="toggleQuantityInput('bhutaneseItemQuantity', this)">
+                            <label class="form-check-label" for="bhutaneseItem">Bhutanese Item</label>
+                            <input class="quantity-input" type="number" id="bhutaneseItemQuantity" name="bhutaneseItemQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="soupOrDal" name="soupOrDal" onclick="toggleQuantityInput('soupOrDalQuantity', this)">
+                            <label class="form-check-label" for="soupOrDal">Soup or Dal</label>
+                            <input class="quantity-input" type="number" id="soupOrDalQuantity" name="soupOrDalQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dessertFruits" name="dessertFruits" onclick="toggleQuantityInput('dessertFruitsQuantity', this)">
+                            <label class="form-check-label" for="dessertFruits">Dessert: Fruits</label>
+                            <input class="quantity-input" type="number" id="dessertFruitsQuantity" name="dessertFruitsQuantity" min="1" value="1">
+                        </div>
+                    </div>
+                
+                    <div class="menu-group" id="regional">
+                        <h5>Regional:</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="riceRegional" name="riceRegional" onclick="toggleQuantityInput('riceRegionalQuantity', this)">
+                            <label class="form-check-label" for="riceRegional">Rice</label>
+                            <input class="quantity-input" type="number" id="riceRegionalQuantity" name="riceRegionalQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="sukhaRoti" name="sukhaRoti" onclick="toggleQuantityInput('sukhaRotiQuantity', this)">
+                            <label class="form-check-label" for="sukhaRoti">Sukha Roti</label>
+                            <input class="quantity-input" type="number" id="sukhaRotiQuantity" name="sukhaRotiQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="aluSabji" name="aluSabji" onclick="toggleQuantityInput('aluSabjiQuantity', this)">
+                            <label class="form-check-label" for="aluSabji">ALU Sabji</label>
+                            <input class="quantity-input" type="number" id="aluSabjiQuantity" name="aluSabjiQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="paneerGravy" name="paneerGravy" onclick="toggleQuantityInput('paneerGravyQuantity', this)">
+                            <label class="form-check-label" for="paneerGravy">Paneer Gravy</label>
+                            <input class="quantity-input" type="number" id="paneerGravyQuantity" name="paneerGravyQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="chickenGravy" name="chickenGravy" onclick="toggleQuantityInput('chickenGravyQuantity', this)">
+                            <label class="form-check-label" for="chickenGravy">Chicken Gravy</label>
+                            <input class="quantity-input" type="number" id="chickenGravyQuantity" name="chickenGravyQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="kewaDatshiRegional" name="kewaDatshiRegional" onclick="toggleQuantityInput('kewaDatshiRegionalQuantity', this)">
+                            <label class="form-check-label" for="kewaDatshiRegional">Kewa Datshi</label>
+                            <input class="quantity-input" type="number" id="kewaDatshiRegionalQuantity" name="kewaDatshiRegionalQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dal" name="dal" onclick="toggleQuantityInput('dalQuantity', this)">
+                            <label class="form-check-label" for="dal">Dal</label>
+                            <input class="quantity-input" type="number" id="dalQuantity" name="dalQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dessertSweets" name="dessertSweets" onclick="toggleQuantityInput('dessertSweetsQuantity', this)">
+                            <label class="form-check-label" for="dessertSweets">Dessert: Sweets</label>
+                            <input class="quantity-input" type="number" id="dessertSweetsQuantity" name="dessertSweetsQuantity" min="1" value="1">
+                        </div>
+                    </div>
+                </div>
+               </form> 
           </div>
             
 
@@ -343,7 +344,7 @@
                         <ul><b>Process</b>
                             <li>Upon sumitting the form our staff will shortly contact you on WhatsApp.</li>
                             <li>We will quote the final cost of your booking selection</li>
-                            <li>Please record the journal number or screeshot of payment made.</li>
+                            <li>Please record the journal number or screenshot of payment made.</li>
                             </ul>
     </div>
                 </p>
@@ -443,16 +444,15 @@ function hideTooltip() {
 
 
     // Menu
-    // function toggleDropdown() {
-    //         const checkBox = document.getElementById('midRouteRest');
-    //         const dropdownContent = document.getElementById('dropdownContent');
-    //         dropdownContent.style.display = checkBox.checked ? 'flex' : 'none';
-    //     }
+    function toggleQuantityInput(inputId, checkbox) {
+    var input = document.getElementById(inputId);
+    if (checkbox.checked) {
+        input.style.display = 'block';
+    } else {
+        input.style.display = 'none';
+    }
+}
 
-    //     function toggleQuantityInput(quantityInputId, checkbox) {
-    //         const quantityInput = document.getElementById(quantityInputId);
-    //         quantityInput.style.display = checkbox.checked ? 'inline-block' : 'none';
-    //     }
 
     // Form to whatsApp
     function toggleDropdown() {
