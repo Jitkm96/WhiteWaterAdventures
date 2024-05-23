@@ -407,7 +407,7 @@
  }
 /* menu */
 .dropdown-content {
-  display: none;
+  /* display: none; */
   flex-direction: column;
   gap: 10px;
   margin-top: 10px;

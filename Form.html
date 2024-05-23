@@ -101,7 +101,7 @@
 
 <!-- Form -->
     <div class="container">
-        <form>
+        <form id="adventureForm">
             <!-- Optional card -->
             <h4>Adventure Options:</h4>
             <p>Embark on a thrilling journey by choosing between two exhilarating rivers for your rafting adventure!</p>
@@ -114,7 +114,7 @@
                         <h5 class="card-title"><b>Mochhu</b></h5>
                         <p class="card-text">Ideal for beginner and family</p>
                         <div class="custom-control custom-radio">
-                          <input type="radio" id="radio1" name="customRadio" class="custom-control-input">
+                          <input type="radio" id="radio1" name="customRadio" class="custom-control-input" value="Mochhu">
                           <label class="custom-control-label" for="radio1"></label>
                         </div>
                       </div>
@@ -127,7 +127,7 @@
                         <h5 class="card-title"><b>Pochhu</b></h5>
                         <p class="card-text">Ideal for those who loves challenges</p>
                         <div class="custom-control custom-radio">
-                          <input type="radio" id="radio2" name="customRadio" class="custom-control-input">
+                          <input type="radio" id="radio2" name="customRadio" class="custom-control-input" value="Pochhu">
                           <label class="custom-control-label" for="radio2"></label>
                         </div>
                       </div>
@@ -189,10 +189,11 @@
             <div class="form-section">             
                 <h4>Add-Ons:</h4>     
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="midRouteRest" name="midRouteRest" onclick="toggleDropdown()">
+                    <!-- <input class="form-check-input" type="checkbox" id="midRouteRest" name="midRouteRest" onclick="toggleDropdown()">
                     <label class="form-check-label" for="midRouteRest">
                         Mid-route rest and meal
-                    </label>
+                    </label> -->
+                    <h5>Mid-route rest and meal</h5>
                 </div>
                 </div>          
             
@@ -327,21 +328,23 @@
             <div class="tooltip-container QM">
                 <button class="tooltip-icon" onmouseover="showTooltip()" onmouseout="hideTooltip()"><img src="./Assets/Icons/help.png" height="35px" width="35px"/></button>
                 <div class="tooltip-dialog text-left" id="tooltipDialog">
-                    <ul><b>Process</b>
-                        <li>Upon sumitting the form our staff will shortly contact you on WhatsApp.</li>
-                        <li>We will quote the final cost of your booking selection</li>
-                        <li>Please record the journal number or screeshot of payment made.</li>
+                    <ul>
+                        <li>You will get a 50% refund if you cancel 24 hours before the rafting trip.</li>
+                        <li>No refund if you cancel on the day of the rafting.</li>
+                    </ul>
                     <!-- Add more content or styling as needed -->
                 </div> 
             </div> 
             <div class="form-section text-center">  
-                <button type="submit" class="btn btn-primary submit">Submit</button>
+                <img src="./Assets/Icons/logo.png" height="48px" width="48px" alt="whatsappicon"/>
+                <button type="submit" class="btn btn-primary submit" onclick="submitForm()">Get the quote</button>
                 <p class="refund-policy">
                      <div class="refundbox">
-        <ul>
-            <li>You will get a 50% refund if you cancel 24 hours before the rafting trip.</li>
-            <li>No refund if you cancel on the day of the rafting.</li>
-        </ul>
+                        <ul><b>Process</b>
+                            <li>Upon sumitting the form our staff will shortly contact you on WhatsApp.</li>
+                            <li>We will quote the final cost of your booking selection</li>
+                            <li>Please record the journal number or screeshot of payment made.</li>
+                            </ul>
     </div>
                 </p>
             </div>
@@ -440,16 +443,52 @@ function hideTooltip() {
 
 
     // Menu
+    // function toggleDropdown() {
+    //         const checkBox = document.getElementById('midRouteRest');
+    //         const dropdownContent = document.getElementById('dropdownContent');
+    //         dropdownContent.style.display = checkBox.checked ? 'flex' : 'none';
+    //     }
+
+    //     function toggleQuantityInput(quantityInputId, checkbox) {
+    //         const quantityInput = document.getElementById(quantityInputId);
+    //         quantityInput.style.display = checkbox.checked ? 'inline-block' : 'none';
+    //     }
+
+    // Form to whatsApp
     function toggleDropdown() {
-            const checkBox = document.getElementById('midRouteRest');
-            const dropdownContent = document.getElementById('dropdownContent');
-            dropdownContent.style.display = checkBox.checked ? 'flex' : 'none';
+            var dropdownContent = document.getElementById('dropdownContent');
+            dropdownContent.style.display = dropdownContent.style.display === 'none' ? 'block' : 'none';
         }
 
         function toggleQuantityInput(quantityInputId, checkbox) {
-            const quantityInput = document.getElementById(quantityInputId);
-            quantityInput.style.display = checkbox.checked ? 'inline-block' : 'none';
+            var quantityInput = document.getElementById(quantityInputId);
+            quantityInput.style.display = checkbox.checked ? 'inline' : 'none';
         }
+
+        function submitForm() {
+            var form = document.getElementById('adventureForm');
+            var formData = new FormData(form);
+            var message = "Adventure Options:\n";
+            
+            formData.forEach((value, key) => {
+                message += `${key}: ${value}\n`;
+            });
+
+            var whatsappUrl = `https://wa.me/97577383218?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.getElementById('adventureForm');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                submitForm();
+            });
+
+            document.getElementById('dropdownContent').style.display = 'none';
+            var quantityInputs = document.querySelectorAll('.quantity-input');
+            quantityInputs.forEach(input => input.style.display = 'none');
+        });
 
     </script>
 
