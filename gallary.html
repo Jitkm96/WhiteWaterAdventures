@@ -39,13 +39,15 @@
   bottom:6.25rem;
 }
 
-.container{
-  width: 100%;
-border-color: rgb(77, 51, 51);
-margin: 100px;
-padding: 0px;
-   
+.container.items {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 10vh;  
 }
+
+   
+
 .g {
   font-weight: bold;
 }
@@ -110,207 +112,114 @@ padding: 0px;
         </div>
 
       <!-- container -->
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 container">
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Assets/Images/IMG_0077.png" alt="">
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-                <div class="card-body">
-                    <p class="card-text">
-                        Begin your rafting adventure at Riverside with a guide briefing. The gentle river flow suits all skill levels. Surrounded by lush greenery and distant rapids, enjoy breathtaking scenery as your journey begins.
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Assets/Images/IMG_0095.png" alt="">
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-                <div class="card-body">
-                    <p class="card-text">
-                        Your rafting adventure ends at Changyel. Reflect on your journey amid the final rapids and sense of achievement. Unwind, share stories, and enjoy the serene riverside beauty before disembarking.
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Assets/Images/IMG_4314.png" alt="">
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-                <div class="card-body">
-                    <p class="card-text">
-                        Family packages often include extra activities and amenities to keep children entertained, such as games and tours, whereas individual packages focus more on the thrilling rafting experience itself and skill development.
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Assets/Images/IMG_1437.png" alt="">
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-                <div class="card-body">
-                    <p class="card-text">
-                        The individual package offers solo adventurers or groups a highly personalized rafting experience, with enhanced flexibility and extensive customization options tailored specifically to their individual skill levels, interests, and unique preferences.
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Assets/Images/IMG_4240.png" alt="">
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-                <div class="card-body">
-                    <p class="card-text">
-                        The family package ensures a fun, safe rafting adventure suitable for all ages. It includes special features and accommodations specifically tailored for families, catering to the needs of children, teenagers, and older adults alike.
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Assets/Images/IMG_4238.png" alt="">
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-                <div class="card-body">
-                    <p class="card-text">
-                        Join the individual rafting package, forge memories, and build connections with others or strangers, all while navigating the waterways. Embark on the individual package, rafting alongside others or strangers, creating indelible memories.
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Assets/Images/IMG_0437.png" alt="">
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-                <div class="card-body">
-                    <p class="card-text">
-                        The individual package is designed for solo adventurers or groups of friends seeking a more personalized and intense rafting experience. It offers flexibility and customization options tailored to individual skill levels and preferences.
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Assets/Images/IMG_0702.png" alt="">
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-                <div class="card-body">
-                    <p class="card-text">
-                        Family packages include safety gear specifically tailored for children, ensuring proper fit and enhanced safety. In contrast, individual packages provide standard gear suitable for adult adventurers and their unique needs.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-      <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 container">
-
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+ 
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./assets/image/activites-rafting-ami-veneon-1-1920x960.jpg" alt="">
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <img src="./Assets/Images/IMG_6044.png" alt="img">
             <div class="card-body">
-              <p class="card-text">
-             Begin your rafting adventure at Riverside with a guide briefing. The gentle river flow suits all skill levels. Surrounded by lush greenery and distant rapids, enjoy breathtaking scenery as your journey begins.</p>
+              <p class="card-text">Rafting begins at scenic Riverside, with a briefing, gentle rapids, lush surroundings, and building excitement.</p>
+               <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">  </div>
+               </div>
             </div>
           </div>
         </div>
 
-
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./assets/image/activites-rafting-ami-veneon-1-1920x960.jpg" alt="">
-            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <img src="./Assets/Images/IMG_5391.png" alt="img">
             <div class="card-body">
-              <p class="card-text">Your rafting adventure ends at changyel. Reflect on your journey amid the final rapids and sense of achievement. Unwind, share stories, and enjoy the serene riverside beauty before disembarking.</p>
+              <p class="card-text">Your rafting adventure ends at Sandy Shores, reflecting on achievements, and enjoying views.</p>
+               <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group"> </div>
+               </div>
             </div>
           </div>
         </div>
 
-
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./assets/image/activites-rafting-ami-veneon-1-1920x960.jpg" alt="">
-            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <img src="./Assets/Images/IMG_6114.png" alt="img">
             <div class="card-body">
-              <p class="card-text">Family packages often include extra activities and amenities to keep children entertained, such as games and tours, whereas individual packages focus more on the thrilling rafting experience itself and skill development.</p>
+              <p class="card-text">Join the individual rafting package to share an adventurous, exciting journey with fellow thrill-seekers and strangers.</p>
+               <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">  </div>
+               </div>
             </div>
           </div>
         </div>
 
-
+        
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./assets/image/rafting.jpg" alt="">
-           <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
-           </text>
+            <img src="./Assets/Images/IMG_6114.png" alt="img">
             <div class="card-body">
-              <p class="card-text"> The individual package offers solo adventurers or groups a highly personalized rafting experience, with enhanced flexibility and extensive customization options tailored specifically to their individual skill levels, interests, and unique preferences.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="./assets/image/rafting.jpg" alt="">
-            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
-            </text>
-            <div class="card-body">
-              <p class="card-text">The family package ensures a fun, safe rafting adventure suitable for all ages. It includes special features and accommodations specifically tailored for families, catering to the needs of children, teenagers, and older adults alike.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="./assets/image/rafting.jpg" alt="">
-          <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
-          </text>
-            <div class="card-body">
-              <p class="card-text">Join the individual rafting package, forge memories, and build connections with others or strangers, all while navigating the waterways.Embark on the individual package, rafting alongside others or strangers, creating indelible memories.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="./assets/image/Water-and-Flood-Team-Leader-WFTL-–-Rescue-3-Europe-2-1440x960.jpg" alt="">
-            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
-            </text>
-            <div class="card-body">
-              <p class="card-text">The individual package is designed for solo adventurers or groups of friends seeking a more personalized and intense rafting experience. It offers flexibility and customization options tailored to individual skill levels and preferences.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="./assets/image/Water-and-Flood-Team-Leader-WFTL-–-Rescue-3-Europe-2-1440x960.jpg" alt="">
-            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-            <div class="card-body">
-              <p class="card-text">Family packages include safety gear specifically tailored for children, ensuring proper fit and enhanced safety. In contrast, individual packages provide standard gear suitable for adult adventurers and their unique needs.</p>
-              </div>
+              <p class="card-text">Family packages offer tailored children's safety gear; individual packages provide standard gear for all participants. </p>
+               <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">  </div>
+               </div>
             </div>
           </div>
         </div>
         
-     </div> -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Assets/Images/IMG_6114.png" alt="img">
+            <div class="card-body">
+              <p class="card-text"> Individual package offers solo adventurers or friends, intense rafting experience with flexible customization.</p>
+               <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Assets/Images/IMG_6114.png" alt="img">
+            <div class="card-body">
+              <p class="card-text"> 
+                Family packages include activities for children, while individual packages focus primarily on the rafting experience.</p>
+               <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+
+            
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Assets/Images/IMG_6114.png" alt=" img">
+            <div class="card-body">
+              <p class="card-text"> Family packages ensure fun and safety for all ages, with extra features for a comfortable rafting adventure.</p>
+               <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+
+            
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Assets/Images/IMG_6114.png" alt=" img">
+            <div class="card-body">
+              <p class="card-text"> Individual packages offer solo adventurers or friends a personalized, intense rafting experience with flexible skill-based.</p>
+               <div class="d-flex justify-content-between align-items-center">
+                 <div class="btn-group">  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+    
+     
+    
+      
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
       </main>
       <!-- Footer -->

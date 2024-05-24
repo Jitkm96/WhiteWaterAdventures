@@ -18,11 +18,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <style>
   button {
-  border: 2px solid #196DB9;
+  border: 2px solid #e65c00;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .banner {
-            background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("./Assets/Images/IMG_0702.png");
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("./Assets/Image/ContactBanners.png");
           }
 .c {
   font-weight: bold;
@@ -59,7 +59,8 @@
         <section class="contact-options">
             <div class="contact-option">
               <button class="CL US">
-                <img class="cnt" src="./Assets/Icons/telephone.png" alt="Call Us">
+                <a href="tel:+97577383218">
+                <img class="cnt" src="./Assets/Icons/telephone.png" alt="Call Us"></a>
                 <!-- <span class="material-symbols-outlined">
                   call
                 </span> -->
@@ -68,8 +69,7 @@
               </button>
             </div>
             <div class="contact-option">
-              <button class="EL US">
-                <img class="cnt" src="./Assets/Icons/email.png" alt="Email Us">
+              <button class="EL US"><a href="mailto:jitkm3@gmail.com"><img class="cnt" src="./Assets/Icons/email.png" alt="Email Us"></a>
                 <!-- <span class="material-symbols-outlined">
                   mail
                   </span> -->
@@ -82,26 +82,35 @@
           <h2 class="mb-5 mt-3">Your thoughts matter! Send us a message.</h2>
           <form id="contactForm">
               <div class="form-group flex-group">
-                  <div class="flex-item">
+                  <div class="flex-item lb">
                       <label for="first-name">First Name:</label>
                       <input type="text" id="first-name" name="first-name" required>
                   </div>
-                  <div class="flex-item">
+                  <div class="flex-item lb">
                       <label for="last-name">Last Name:</label>
                       <input type="text" id="last-name" name="last-name" required>
                   </div>
               </div>
-              <div class="form-group">
+              <div class="form-group lb">
                   <label for="email">Email:</label>
                   <input type="email" id="email" name="email" required>
               </div>
-              <div class="form-group">
+              <div class="form-group lb">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required class="form-control lb">
+                    <option value="">Select Subject</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Inquiry">Inquiry</option>
+                </select>
+            </div>
+              <div class="form-group lb">
                   <label for="message">Message:</label>
                   <textarea id="message" name="message" rows="5" required></textarea>
               </div>
-              <button type="submit" class="submit-btn">Submit</button>
+              <button type="submit" class="submit-btn btn">Submit</button>
           </form>
       </section>
+      
 
 
 
@@ -119,6 +128,30 @@
                   event.currentTarget.classList.add("active-link");
                   document.getElementById(tabname).classList.add("active-tab")
               }
+
+              // whatsapp
+              document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        sendDetailsToWhatsApp();
+    });
+});
+
+function sendDetailsToWhatsApp() {
+    const form = document.getElementById('contactForm');
+    const firstName = form['first-name'].value;
+    const lastName = form['last-name'].value;
+    const email = form.email.value;
+    const subject = form.subject.value;
+    const message = form.message.value;
+
+    const whatsappMessage = `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+
+    const yourWhatsAppNumber = '97577383218'; // Replace with your WhatsApp number without country code
+    const whatsappUrl = `https://wa.me/${yourWhatsAppNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
           
           </script>
           
