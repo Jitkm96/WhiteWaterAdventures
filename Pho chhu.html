@@ -10,18 +10,29 @@
 
   <style>
     .banner {
-            background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("./Assets/Image/PochuBanner.png");
-          }
-  </style>
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("./Assets/Image/AboutUsBanner.png");
+}
 
-</head>
+.container.items {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 10vh;  
+}
+.card {
+border-color: rgb(179, 164, 164); 
+}
+.a {
+  font-weight: bold;
+}
+    </style>
+  </head>
 <body>
-
   <script src="//code.jquery.com/jquery.min.js"></script>
 
 	<script type="text/javascript" >
 		//<!-- start navigation -->
-		< $.get("Nav.html", function(data){
+		$.get("Nav.html", function(data){
 			$("#navigation").replaceWith(data);
 		});
 
@@ -31,18 +42,11 @@
 		});
 		
 	</script>
-  
-  <!-- Nav -->
+  <!-- nav -->
+   
+  <div id="navigation"></div>
 
-<div id="navigation"></div>
-
-
-<!-- Nav -->
-
-  <!-- Banner -->
-  <div class="banner">
-    <h1>Services</h1>
-  </div>
+  <!-- nav -->
 
  
   <!DOCTYPE html>
