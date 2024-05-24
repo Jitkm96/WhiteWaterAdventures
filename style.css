@@ -96,7 +96,7 @@
 .static-caption {
   position: absolute;
   top: 55%;
-  left: 35%;
+  left: 30%;
   transform: translate(-50%, -50%);
   text-align: center; 
   z-index: 10;
@@ -277,14 +277,7 @@
         border-width: 5px;
         border-radius: 20px;
       }
-      .lead2{
-        font-family: ;
-        font-weight: 100%;
-        font-style: normal;
-        border-radius: 20px;
-
-      }
-
+     
      
 /* States */
 .stats-section {
