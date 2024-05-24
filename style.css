@@ -81,7 +81,11 @@
   padding: 0;
 }
 
-
+.hgt {
+  font-size: larger; 
+  font-weight: bolder; 
+  color: #196DB9;
+}
   /* Home Page */
   .bn {
   background-repeat:no-repeat;
@@ -238,8 +242,8 @@
       border-radius: 10px;
       width: 60%;
   }
-  .certi img {
-      max-width: 100%;
+  .certi-content img {
+      max-width:30%;
       height: auto;
   }
   .certi-header {
@@ -501,6 +505,7 @@
   display: none;
   width: 60px;
   margin-left: 10px;
+  margin-right: 4vw;
 }
 
 @media (min-width: 768px) {
@@ -574,6 +579,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 
@@ -582,14 +588,17 @@
  /* Base styles for .refundbox */
  .refundbox {
    background-color: #fff;
-   border: 1px solid #ccc;
+   /* border: 1px solid #ccc; */
    border-radius: 8px;
    padding: 20px;
    margin: 20px auto;
+   margin-top: 0%;
    max-width: fit-content;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
    font-family: Arial, sans-serif;
    line-height: 1.6;
+  display: flex;
+  justify-content: center;
  }
  
  /* List styles */
@@ -692,7 +701,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 10vw;
+  margin-top: 5vw;
   margin-left: 5vw;
   margin-right: 5vw;
 }
