@@ -314,18 +314,18 @@
                     <!-- Add more content or styling as needed -->
                 </div> 
             </div> 
+            <p class="form-section text-center" style="font-size: large; margin-bottom: 0 !important;"><b>Process</b></p>
+                <div class="refundbox">
+                   <ul>
+                       <li>Upon sumitting the form our staff will shortly contact you on WhatsApp.</li>
+                       <li>We will quote the final cost of your booking selection</li>
+                       <li>Please record the journal number or screenshot of payment made.</li>
+                       </ul>
+                   </div>
+  
             <div class="form-section text-center whatsapp-button">  
                 <img src="./Assets/Icons/logo.png" height="48px" width="48px" alt="whatsappicon"/>
                 <button type="submit" class="btn btn-primary submit" onclick="sendMessage()">Get the quote</button>
-                <p class="refund-policy">
-                     <div class="refundbox">
-                        <ul><b>Process</b>
-                            <li>Upon sumitting the form our staff will shortly contact you on WhatsApp.</li>
-                            <li>We will quote the final cost of your booking selection</li>
-                            <li>Please record the journal number or screenshot of payment made.</li>
-                            </ul>
-                        </div>
-                </p>
             </div>
         </form>
     </div>
@@ -482,7 +482,7 @@ function hideTooltip() {
     const date = form.date.value;
     const adventure = form.customRadio.value;
 
-    let message = `Name: ${name}\nAge: ${age}\nCountry: ${country}\nPhone: ${phone}\nEmergency Phone: ${emergencyPhone}\nEmail: ${email}\nDate: ${date}\nAdventure: ${adventure}\nAdd-Ons:\n`;
+    let message = `*Booking:*\nName: ${name}\nAge: ${age}\nCountry: ${country}\nPhone: ${phone}\nEmergency Phone: ${emergencyPhone}\nEmail: ${email}\nDate: ${date}\nRiver: ${adventure}\n*Menu/meal:*\n`;
 
     // Loop through menu options to collect selected options and quantities
     const menuGroups = document.querySelectorAll('.menu-group');

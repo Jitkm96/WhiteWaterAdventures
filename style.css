@@ -81,7 +81,11 @@
   padding: 0;
 }
 
-
+.hgt {
+  font-size: larger; 
+  font-weight: bolder; 
+  color: #196DB9;
+}
   /* Home Page */
   .bn {
   background-repeat:no-repeat;
@@ -93,7 +97,7 @@
 
 
 /* crousel button and text */
-.static-caption {
+/* .static-caption {
   position: absolute;
   top: 55%;
   left: 30%;
@@ -129,7 +133,42 @@
     text-align: center; 
     z-index: 10;
   }
+} */
+.static-caption {
+  position: absolute;
+  top: 400px; /* Adjust this value based on your navbar height */
+  left: 10px; /* Adjust padding as needed */
+  text-align: left; /* Adjusted from center to left */
+  z-index: 10;
 }
+.bannertxt {
+  text-align: left;
+}
+.subtitle {
+  text-align: center;
+  margin-top: 3vw;
+  color: #575757;
+  font-weight: 300;
+}
+@media (min-width: 800px) and (max-width: 1050px) {
+  .static-caption {
+    position: absolute;
+    top: 400px; /* Adjust this value based on your navbar height */
+    left: 6px; /* Adjust padding as needed */
+    text-align: left; /* Adjusted from center to left */
+    z-index: 10;
+  }
+}
+@media (max-width: 600px) {
+  .static-caption {
+    position: absolute;
+    top: 400px; /* Adjust this value based on your navbar height */
+    left: 5px; /* Adjust padding as needed */
+    text-align: left; /* Adjusted from center to left */
+    z-index: 10;
+  }
+}
+
 
 
 /* Card */
@@ -238,8 +277,8 @@
       border-radius: 10px;
       width: 60%;
   }
-  .certi img {
-      max-width: 100%;
+  .certi-content img {
+      max-width:20%;
       height: auto;
   }
   .certi-header {
@@ -277,14 +316,7 @@
         border-width: 5px;
         border-radius: 20px;
       }
-      .lead2{
-        font-family: ;
-        font-weight: 100%;
-        font-style: normal;
-        border-radius: 20px;
-
-      }
-
+     
      
 /* States */
 .stats-section {
@@ -435,6 +467,7 @@
   display: none;
   width: 60px;
   margin-left: 10px;
+  margin-right: 4vw;
 }
 
 @media (min-width: 768px) {
@@ -508,6 +541,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 
@@ -516,14 +550,17 @@
  /* Base styles for .refundbox */
  .refundbox {
    background-color: #fff;
-   border: 1px solid #ccc;
+   /* border: 1px solid #ccc; */
    border-radius: 8px;
    padding: 20px;
    margin: 20px auto;
+   margin-top: 0%;
    max-width: fit-content;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
    font-family: Arial, sans-serif;
    line-height: 1.6;
+  display: flex;
+  justify-content: center;
  }
  
  /* List styles */
@@ -626,7 +663,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 10vw;
+  margin-top: 5vw;
   margin-left: 5vw;
   margin-right: 5vw;
 }
