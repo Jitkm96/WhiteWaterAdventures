@@ -482,7 +482,7 @@ function hideTooltip() {
     const date = form.date.value;
     const adventure = form.customRadio.value;
 
-    let message = `Booking:\nName: ${name}\nAge: ${age}\nCountry: ${country}\nPhone: ${phone}\nEmergency Phone: ${emergencyPhone}\nEmail: ${email}\nDate: ${date}\nAdventure: ${adventure}\nAdd-Ons:\n`;
+    let message = `*Booking:*\nName: ${name}\nAge: ${age}\nCountry: ${country}\nPhone: ${phone}\nEmergency Phone: ${emergencyPhone}\nEmail: ${email}\nDate: ${date}\nRiver: ${adventure}\n*Menu/meal:*\n`;
 
     // Loop through menu options to collect selected options and quantities
     const menuGroups = document.querySelectorAll('.menu-group');
