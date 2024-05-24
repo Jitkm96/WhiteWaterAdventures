@@ -95,8 +95,8 @@
 /* crousel button and text */
 .static-caption {
   position: absolute;
-  top: 55%;
-  left: 45%;
+  top: 60%;
+  left: 60%;
   transform: translate(-50%, -50%);
   text-align: center; 
   z-index: 10;
