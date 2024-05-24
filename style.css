@@ -97,7 +97,7 @@
 
 
 /* crousel button and text */
-.static-caption {
+/* .static-caption {
   position: absolute;
   top: 55%;
   left: 30%;
@@ -133,7 +133,42 @@
     text-align: center; 
     z-index: 10;
   }
+} */
+.static-caption {
+  position: absolute;
+  top: 400px; /* Adjust this value based on your navbar height */
+  left: 10px; /* Adjust padding as needed */
+  text-align: left; /* Adjusted from center to left */
+  z-index: 10;
 }
+.bannertxt {
+  text-align: left;
+}
+.subtitle {
+  text-align: center;
+  margin-top: 3vw;
+  color: #575757;
+  font-weight: 300;
+}
+@media (min-width: 800px) and (max-width: 1050px) {
+  .static-caption {
+    position: absolute;
+    top: 400px; /* Adjust this value based on your navbar height */
+    left: 6px; /* Adjust padding as needed */
+    text-align: left; /* Adjusted from center to left */
+    z-index: 10;
+  }
+}
+@media (max-width: 600px) {
+  .static-caption {
+    position: absolute;
+    top: 400px; /* Adjust this value based on your navbar height */
+    left: 5px; /* Adjust padding as needed */
+    text-align: left; /* Adjusted from center to left */
+    z-index: 10;
+  }
+}
+
 
 
 /* Card */
@@ -243,7 +278,7 @@
       width: 60%;
   }
   .certi-content img {
-      max-width:30%;
+      max-width:20%;
       height: auto;
   }
   .certi-header {
