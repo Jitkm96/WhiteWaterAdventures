@@ -411,7 +411,8 @@ document.addEventListener('DOMContentLoaded', function() {
             initialCountry: "auto",
             separateDialCode: true
         });
-// Process
+
+// Menu
 function toggleQuantityInput(inputId, checkbox) {
     var input = document.getElementById(inputId);
     if (checkbox.checked) {
@@ -420,6 +421,15 @@ function toggleQuantityInput(inputId, checkbox) {
         input.style.display = 'none';
     }
 } 
+
+// Process
+function showTooltip() {
+    document.getElementById("tooltipDialog").style.display = "block";
+}
+
+function hideTooltip() {
+    document.getElementById("tooltipDialog").style.display = "none";
+}
 
 
 
