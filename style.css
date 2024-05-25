@@ -317,71 +317,7 @@
         border-radius: 20px;
       }
      
-      [11:54 AM, 5/24/2024] Azhima: body {
-        font-family: "Poppins", sans-serif;
-        margin: 50px 50px 0 50px;
-        background-color: #faf9f6;
-        display: flex;
-        flex-direction: column;
-        min-height: 95vh;
-      }
-      .main {
-        flex: 1;
-      }
-      
-      h1 {
-        font-size: 5rem;
-      }
-      
-      footer {
-        text-align: right;
-        color: midnightblue;
-        clear: both;
-      }
-      h1 span {
-        color: midnightblue;
-      }
-      @media (min-width: 1201px) {
-      .tile-image {
-        width: 300px;
-        float: left;
-        margin-right: 30px;
-      }
-      div[class="left card"] {
-        width: 45%;
-        float: left;
-        margin: 0;
-      }
-      div[class="right card"] {
-        width: 45%;
-        float: right;
-        margin: 0;
-      } 
-      }
-      @media (max-width: 1200px) {
-        h1 {
-          
-          font-size: 7vw;
-          text-align: center;
-          display: block;
-          width: 100%;
-        }
-        img {
-          width: 100%;
-          max-height: 300px;
-          object-fit: cover;
-        }
-        .ti…
-      [5:15 PM, 5/24/2024] Azhima: header nav ul {
-              flex-direction: column;
-          }
-      
-          header nav ul li {
-              margin: 0.5rem 0;
-          }
-
-  
-     
+   
      
 /* States */
 .stats-section {
