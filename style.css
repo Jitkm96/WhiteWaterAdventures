@@ -136,7 +136,7 @@
 } */
 .static-caption {
   position: absolute;
-  top: 400px; /* Adjust this value based on your navbar height */
+  top: 470px; /* Adjust this value based on your navbar height */
   left: 10px; /* Adjust padding as needed */
   text-align: left; /* Adjusted from center to left */
   z-index: 10;
