@@ -261,6 +261,7 @@ text-align: center;
       border-width: 5px;
       border-radius: 20px;
     }
+    
 /* States */
 .stats-section {
 background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./Assets/Image/HomeStrips.png') no-repeat center center;
