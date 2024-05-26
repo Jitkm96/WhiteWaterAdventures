@@ -8,9 +8,10 @@
   width: 100%;
   z-index: 1000;
 }
-.navbar {
-  background-color: #007bff; /* Dark Blue */
+.navbar-90-black {
+  background-color: rgb(26, 26, 26) !important;
 }
+
 .nav-link {
   margin-left: 3vw;
 }
@@ -98,7 +99,7 @@ position:relative;
 /* crousel button and text */
 .static-caption {
 position: absolute;
-top: 400px; /* Adjust this value based on your navbar height */
+top: 450px; /* Adjust this value based on your navbar height */
 left: 10px; /* Adjust padding as needed */
 text-align: left; /* Adjusted from center to left */
 z-index: 10;
