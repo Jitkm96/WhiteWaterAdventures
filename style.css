@@ -45,20 +45,21 @@
   padding: 20px 0;
   text-align: center;
 }
-      
+     
 .footer-logo img {
   height: 50px;
   margin-bottom: 10px;
 }
-      
+     
 .footer-links,
 .social-media {
   margin-bottom: 10px;
 }
-      
+     
 .footer-bottom {
   font-size: 0.8em;
 }
+
 
  /* Banner */
 .banner {
@@ -68,7 +69,6 @@ color: #fff;
 padding: 100px 0;
 margin-bottom: 5vw;
 }
-
 /* H1 */
 .banner h1 {
 text-align: left;
@@ -80,12 +80,13 @@ font-style: normal;
 margin-right: 0;
 padding: 0;
 }
-
 .hgt {
 font-size: larger; 
 font-weight: bolder; 
 color: #196DB9;
 }
+
+
 /* Home Page */
 .bn {
 background-repeat:no-repeat;
@@ -94,45 +95,7 @@ background-position:center center;
 height:500px;
 position:relative;
 }
-
 /* crousel button and text */
-/* .static-caption {
-position: absolute;
-top: 55%;
-left: 30%;
-transform: translate(-50%, -50%);
-text-align: center; 
-z-index: 10;
-}
-.bannertxt {
-text-align: left;
-}
-.subtitle {
-text-align: center;
-margin-top: 3vw;
-color: #575757;
-font-weight: 300;
-}
-@media (min-width: 800px) and (max-width: 1050px) {
-.static-caption {
-  position: absolute;
-  top: 35%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  text-align: center; 
-  z-index: 10;
-}
-}
-@media (max-width: 600px) {
-.static-caption {
-  position: absolute;
-  top: 55%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  text-align: center; 
-  z-index: 10;
-}
-} */
 .static-caption {
 position: absolute;
 top: 400px; /* Adjust this value based on your navbar height */
@@ -167,21 +130,17 @@ font-weight: 300;
   z-index: 10;
 }
 }
-
-
 /* Card */
 .img-overlay {
 position: relative;
 width: 100%;
 height: 300px;
 }
-
 .img-overlay img {
 width: 100%;
 height: 100%;
 object-fit: cover;
 }
-
 .img-overlay .overlay {
 position: absolute;
 top: 0;
@@ -190,7 +149,6 @@ width: 100%;
 height: 100%;
 /* background: rgba(0, 0, 0, 0.5); */
 }
-
 .img-overlay .overlay-text {
 position: absolute;
 bottom: 0;
@@ -209,26 +167,22 @@ text-align: left;
 .smalldetail {
 font-weight: 500;
 }
-
 .overlay-text h4 {
 margin: 0;
 color: #196DB9; /* Title color */
 padding-left: 1vw;
 }
-
 .smalldetail, .smalldetails {
 margin: 2px 0;
 margin-top: 0;
 font-size: small;
 padding-left: 0.5vw;
 }
-
 @media (max-width: 576px) {
 .img-overlay .overlay-text {
   padding: 5px;
 }
 }
-
 /* Ratings */
 .reviews-section {
 background-color: #196DB9;
@@ -298,14 +252,8 @@ text-align: center;
         font-size: 1rem;
     }
 }
-    
-     /* Package */
-      .pkg {
-        color: #FF7A00;
-      }
-
-    /* service */
-    .pho {
+/* service */
+.pho {
       width: 250px;
       height: 250px;
       background-color: #FF7A00;
@@ -313,8 +261,6 @@ text-align: center;
       border-width: 5px;
       border-radius: 20px;
     }
-   
-   
 /* States */
 .stats-section {
 background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./Assets/Image/HomeStrips.png') no-repeat center center;
@@ -340,14 +286,11 @@ color: #007bff;
 font-size: 1.2rem;
 color: white;
 }
-
-
 /* Reviews */
 .Revi {
 width: 90vw;
 margin-left: 5vw;
 }
-
 /* Safety instruction */
 .rafting-section {
  position: relative;
@@ -375,16 +318,18 @@ margin-left: 5vw;
   margin-bottom: 0.5vw;
 }
 
-    
+
+
 /* Service */
 .Feat {
 background-color: #e8e8e8;
 }
-
 .sv {
 border: none;
 background-color: #e8e8e8;
 }
+
+
 
 /* Form */
 .booking {
@@ -420,7 +365,6 @@ h4 {
  font-size: 16px;
  font-weight: bold;
 }
-
 .btn:hover {
  background-color: #0056b3;
 }
@@ -442,61 +386,49 @@ border: 1px solid #ddd;
 border-radius: 8px;
 background-color: #f9f9f9;
 }
-
 .menu-group {
 display: flex;
 flex-direction: column;
 gap: 10px;
 }
-
 .form-check {
 display: flex;
 align-items: center;
 }
-
 .form-check-label {
 margin-left: 10px;
 flex: 1;
 }
-
 .quantity-input {
 display: none;
 width: 60px;
 margin-left: 10px;
 margin-right: 4vw;
 }
-
 @media (min-width: 768px) {
 .menu-container {
     grid-template-columns: repeat(3, 1fr);
 }
 }
-
-
 /* Date */
 .date-input {
  width: auto; 
  min-width: 200px; 
 }
-
-
 /* Add on */
 .form-check-label {
  cursor: pointer;
 }
-
 .form-check-input:checked + .form-check-label {
  font-weight: bold; /* Make label bold when checkbox is checked */
  color: #e65c00;
 }
-
 /* Process */
 .tooltip-container {
 position: relative;
 display: inline-block;
 vertical-align: middle;
 }
-
 .tooltip-icon {
 background-color: transparent;
 border: none;
@@ -504,7 +436,6 @@ color: #007bff;
 cursor: pointer;
 font-size: 16px;
 }
-
 .tooltip-dialog {
 display: none;
 position: absolute;
@@ -517,11 +448,9 @@ width: 400px;
 top: 20%;
 left: 50%;
 }
-
 .tooltip-dialog p {
 margin: 0;
 }
-
 .tooltip-dialog:before {
 content: "";
 position: absolute;
@@ -538,8 +467,6 @@ justify-content: center;
 margin-bottom: 20px;
 margin-top: 20px;
 }
-
-
 /* Refund policy */
 /* Base styles for .refundbox */
 .refundbox {
@@ -556,18 +483,15 @@ margin-top: 20px;
 display: flex;
 justify-content: center;
 }
-
 /* List styles */
 .refundbox ul {
  list-style-type: disc;
  padding-left: 20px;
 }
-
 .refundbox li {
  margin-bottom: 10px;
  font-size: 16px;
 }
-
 /* Responsive adjustments for tablets */
 @media (max-width: 768px) {
  .refundbox {
@@ -575,12 +499,10 @@ justify-content: center;
      padding: 15px;
      margin: 15px;
  }
-
  .refundbox li {
      font-size: 15px;
  }
 }
-
 /* Responsive adjustments for mobile phones */
 @media (max-width: 480px) {
  .refundbox {
@@ -589,11 +511,9 @@ justify-content: center;
      margin: 10px;
      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Lighter shadow for smaller screens */
  }
-
  .refundbox li {
      font-size: 14px;
  }
-
  .refundbox ul {
      padding-left: 15px;
  }
@@ -604,7 +524,6 @@ justify-content: center;
 .contact {
 text-align: center;
 }
-
 /* Contact */
 /* icon */
 .cnt {
@@ -612,22 +531,18 @@ width: 50px;
 max-height: 50px;
 margin-top: 15px;
 }
-
 .contact-options {
 display: flex;
 justify-content: center;
 gap: 20vw;
 margin-bottom: 20px;
 }
-
 .contact-option {
 text-align: center;
 }
-
 .lb {
 color: #565353;
 }
-
 .US { width: 210px;
 height: 170px;
 border-radius: 20px;
@@ -642,7 +557,6 @@ box-shadow: 0 0 15px #b64e09(0, 123, 255, 0.5);
 border: 2px solid #e65c00;
 box-shadow: 0 0 15px rgba(167, 91, 9, 0.75);
 }
-
 .US p {
 margin-top: -10px;
 }
@@ -650,7 +564,6 @@ margin-top: -10px;
 height: 100px;
 margin-bottom: 10px;
 }
-
 .contact-form {
 background-color: #f9f9f9;
 padding: 20px;
@@ -660,24 +573,20 @@ margin-top: 5vw;
 margin-left: 5vw;
 margin-right: 5vw;
 }
-
 #contactForm {
 font-weight: 300;
 margin-bottom: 60px;
 }
-
 .contact-form h2 {
 margin-bottom: 20px;
 font-weight: bold;
 }
-
 .contact-form label {
 display: block;
 text-align: left;
 margin-bottom: 5px;
 font-weight: bold;
 }
-
 .contact-form input,
 .contact-form textarea {
 width: 100%;
@@ -686,17 +595,14 @@ margin-bottom: 10px;
 border: 1px solid #ccc;
 border-radius: 5px;
 }
-
 .flex-group {
 display: flex;
 justify-content: space-between;
 gap: 20px;
 }
-
 .flex-item {
 flex: 1;
 }
-
 .submit-btn {
 padding: 10px 20px;
 border: none;
@@ -705,11 +611,9 @@ color: #fff;
 cursor: pointer;
 border-radius: 5px;
 }
-
 .submit-btn:hover {
 background-color: #196DB9;
 }
-
 .btnsad {
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -741,6 +645,7 @@ text-align: center;
 }
 
 
+
 /* Facility Nearby */
 .home-header {
 position: relative;
@@ -749,20 +654,15 @@ background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background
 text-align: center;
 margin-top: -50px; /* Overlap the header slightly with the image */
 }
-
 .home-header h1 {
 
 /* margin-bottom: 1rem; */
 }
-
-
 /* Phochhu and mochhu */
 .gallery_button{
 position: absolute;
 left: 80%;
- 
 }
-
 img{
 object-fit: cover;
 }
