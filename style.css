@@ -8,9 +8,10 @@
   width: 100%;
   z-index: 1000;
 }
-.navbar {
-  background-color: #007bff; /* Dark Blue */
+.navbar-90-black {
+  background-color: rgb(26, 26, 26) !important;
 }
+
 .nav-link {
   margin-left: 3vw;
 }
@@ -73,7 +74,7 @@ margin-bottom: 5vw;
 .banner h1 {
 text-align: left;
 margin-left: 10vw;
-margin-top: 0;
+margin-top: 80px;
 font-family: "Montserrat", sans-serif;
 font-weight: bold;
 font-style: normal;
@@ -98,7 +99,7 @@ position:relative;
 /* crousel button and text */
 .static-caption {
 position: absolute;
-top: 400px; /* Adjust this value based on your navbar height */
+top: 450px; /* Adjust this value based on your navbar height */
 left: 10px; /* Adjust padding as needed */
 text-align: left; /* Adjusted from center to left */
 z-index: 10;
@@ -261,6 +262,7 @@ text-align: center;
       border-width: 5px;
       border-radius: 20px;
     }
+    
 /* States */
 .stats-section {
 background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./Assets/Image/HomeStrips.png') no-repeat center center;
