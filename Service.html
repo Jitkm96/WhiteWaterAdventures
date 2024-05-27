@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Reset and basic styles */
 * {
     margin: 0;
     padding: 0;
@@ -24,9 +23,7 @@ main {
 h2 {
     margin-bottom: 1rem;
 }
-.photography {
-  background-color: #0056b3;
-}
+
 .photography, .transportation, .midroute {
     margin-bottom: 2rem;
 }
@@ -125,6 +122,37 @@ h2 {
 .banner {
             background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("./Assets/Image/ServiceBanner.png");
           }
+
+          .menu-section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .menu-section .col-md-6.cd {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .menu-section .col-md-6 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px; /* Optional: for some padding around the content */
+      box-sizing: border-box;
+    }
+    
+    .menu-section h3,
+    .menu-section p {
+      margin: 0;
+      text-align: center; /* Centers text within its container */
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
     </style>
 </head>
 <body>
@@ -153,7 +181,7 @@ h2 {
 <div class="banner">
     <h1>Services</h1>
 </div>
-<h2 style="color: #196DB9; font-weight: bold; text-align: center;">Embark on an Unforgettable Adventure with Our White Water Rafting Services in Punakha, Bhutan!</h2>
+<h2 style="color: #196DB9; font-weight: bold; text-align: center;">Embark on an Unforgettable Adventure with <br>Our White Water Rafting Services in Punakha, Bhutan!</h2>
       <div class="album py-5 bg-body-primary">
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 g-3">
@@ -168,8 +196,8 @@ h2 {
                   </div>
                 </div>
                 <div class="card-body ser">
-                  <h4 style="margin-top: 5px; margin-bottom: 2px;">Pochhu</h4>
-                  <p class="card-text">The Pochhu is known for its thrilling rapids on the Pochhu river which offers adventure and exciting rafting services.</p>
+                  <h4 style="margin-top: 5px; margin-bottom: 2px;">Phochhu</h4>
+                  <p class="card-text">The Phochhu is known for its thrilling rapids on the Phochhu river which offers adventure and exciting rafting services.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="./Pho chhu.html"><button type="button" class="btn btn-sm btn-outline-secondary"><b>Read More</b></button></a>
@@ -202,31 +230,64 @@ h2 {
           </div>
         </div>
       </div>
+
+<div style="background-color: #0056b3;">
+<div class="container">
 <section class="photography py-5 mt-3">
   <h2 style="color: white; font-weight: bold; text-align: center;">Photography</h2>
   <br>
   <div class="photo-options row">
-      <div class="photo-option col-md-4 mb-4">
-          <div class="card">
-              <img src="./Assets/Image/Starting.png" class="card-img-top " alt="Photograph at start point" onclick="openModal('./Assets/Image/Starting.png', 'Photograph at start point')">
-              <div class="photo-description">Photograph at start point</div>
+  <div class="row"> 
+    <div class="col">
+        <div class="card ser">
+          <div class="img-overlay">
+            <img class="bd-placeholder-img card-img-top rftimg" width="100%" height="500" src="./Assets/Image/Starting.png" alt="Pochhu River">
+            <div class="overlay"></div>
+            <div class="overlay-text"><p>
+                Photograph at start point
+            </p>
+            </div>
           </div>
+        </div>
       </div>
-      <div class="photo-option col-md-4 mb-4">
-          <div class="card">
-              <img src="./Assets/Image/Duringrafting.png" class="card-img-top" alt="Photograph during the Rafting" onclick="openModal('./Assets/Image/Duringrafting.png', 'Photograph during the Rafting')">
-              <div class="photo-description">Photograph during the Rafting</div>
+      
+    <div class="col-12 col-md-4">
+    <div class="col">
+        <div class="card ser">
+          <div class="img-overlay">
+            <img class="bd-placeholder-img card-img-top rftimg" width="100%" height="500" src="./Assets/Image/Duringrafting.png" alt="Pochhu River">
+            <div class="overlay"></div>
+            <div class="overlay-text">
+                <p>
+                  Photograph during the Rafting
+                </p>
+            </div>
           </div>
+        </div>
       </div>
-      <div class="photo-option col-md-4 mb-4">
-          <div class="card">
-              <img src="./Assets/Image/Afterrafting.png" class="card-img-top" alt="Photograph at the end point" onclick="openModal('./Assets/Image/Afterrafting.png', 'Photograph at the end point')">
-              <div class="photo-description">Photograph at the end point</div>
+    </div>
+
+    <div class="col-12 col-md-4">
+    <div class="col">
+        <div class="card ser">
+          <div class="img-overlay">
+            <img class="bd-placeholder-img card-img-top rftimg" width="100%" height="300" src="./Assets/Image/Afterrafting.png" alt="Pochhu River">
+            <div class="overlay"></div>
+            <div class="overlay-text">
+                <p>
+                  Photograph during the Rafting
+                </p>
+            </div>
           </div>
+          </div>
+        </div>
       </div>
-  </div>
-  <p class="mx-5" style="color: white; text-align: center;">Enhance your adventure with our photography service! Choose to capture moments at the start, during the thrill of rafting, and at the finish line. Opt for one or all three points, and we'll ensure you have stunning photographs to remember your journey.</p>
+    </div>
+</div>
+  <p class="mx-5" style="color: white; text-align: center;">Enhance your adventure with our photography service! Choose to capture moments at the start, during the thrill of rafting, and at the finish line. Opt for one or all three points, and we'll ensure you have stunning photographs to remember your journey.</p>  
 </section>
+</div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
@@ -263,9 +324,11 @@ h2 {
           <img class="img-fluid" src="./Assets/Image/dish 2.jpg" alt="Locals Specialties">
       </div>
       <div class="col-md-6">
-          <h3>Locals Specialties</h3>
-          <p>Experience the essence of Bhutanese cuisine with our local specialties. Enjoy fluffy steamed rice paired with Ema Datshi, a spicy dish made with chili peppers and cheese. Savor Kewa Datshi, featuring sliced potatoes cooked with chili and cheese, and indulge in tender Pork Pa and succulent Chicken Curry. Our steam veg selection offers a light and healthy accompaniment to these flavorful dishes.</p>
+        <div class="tv">
+          <h3 style="text-align: left;">Locals Specialties</h3>
+          <p style="text-align: left;">Experience the essence of Bhutanese cuisine with our local specialties. Enjoy fluffy steamed rice paired with Ema Datshi, a spicy dish made with chili peppers and cheese. Savor Kewa Datshi, featuring sliced potatoes cooked with chili and cheese, and indulge in tender Pork Pa and succulent Chicken Curry. Our steam veg selection offers a light and healthy accompaniment to these flavorful dishes.</p>
       </div>
+    </div>
   </div>
   <hr class="my-4">
 
@@ -273,10 +336,12 @@ h2 {
       <div class="col-md-6 order-md-2 cd">
           <img class="img-fluid" src="./Assets/Image/dish 1.jpg" alt="Regional Favorites">
       </div>
-      <div class="col-md-6 order-md-1">
-          <h3>Regional Favorites</h3>
-          <p>Discover a variety of regional favorites with our diverse menu. Relish steamed rice alongside Sukha Roti, a traditional Indian flatbread, and Alu Sabji, a spiced potato curry. Enjoy Paneer Gravy and Chicken Gravy, both cooked in rich, creamy sauces. Our selection also includes Dal, a nutritious lentil dish, and Kewa Datshi for a comforting traditional meal.</p>
+      <div class="col-md-6 order-md-1 menut">
+        <div class="tv">
+          <h3 style="text-align: left;">Regional Favorites</h3>
+          <p style="text-align: left;">Discover a variety of regional favorites with our diverse menu. Relish steamed rice alongside Sukha Roti, a traditional Indian flatbread, and Alu Sabji, a spiced potato curry. Enjoy Paneer Gravy and Chicken Gravy, both cooked in rich, creamy sauces. Our selection also includes Dal, a nutritious lentil dish, and Kewa Datshi for a comforting traditional meal.</p>
       </div>
+    </div>
   </div>
   <hr class="my-4">
 
@@ -285,9 +350,11 @@ h2 {
           <img class="img-fluid" src="./Assets/Image/dish 3.jpg" alt="International Dishes">
       </div>
       <div class="col-md-6">
-          <h3>International Dishes</h3>
-          <p>Our international menu features a variety of dishes to cater to all tastes. Enjoy steamed rice and stir-fried noodles with a mix of vegetables and sauces. Delight in Beef Sliced Fried, Chicken Chilli, and steamed asparagus. We also offer a traditional Bhutanese item and a choice of hearty soup or nutritious dal, ensuring a satisfying meal for everyone.</p>
+        <div class="tv">
+          <h3 style="text-align: left;">International Dishes</h3>
+          <p style="text-align: left;">Our international menu features a variety of dishes to cater to all tastes. Enjoy steamed rice and stir-fried noodles with a mix of vegetables and sauces. Delight in Beef Sliced Fried, Chicken Chilli, and steamed asparagus. We also offer a traditional Bhutanese item and a choice of hearty soup or nutritious dal, ensuring a satisfying meal for everyone.</p>
       </div>
+    </div>
   </div>
 </section>
 
