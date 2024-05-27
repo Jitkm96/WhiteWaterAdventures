@@ -754,11 +754,15 @@ margin-top: -50px; /* Overlap the header slightly with the image */
 
 /* margin-bottom: 1rem; */
 }
+
+
 /* Phochhu and mochhu */
 .gallery_button{
 position: absolute;
 left: 80%;
 }
-img{
-object-fit: cover;
+.fill-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
