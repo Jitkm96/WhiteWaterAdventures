@@ -8,6 +8,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 <style>
+     .card {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px; /* Add margin for spacing between cards */
+            border-radius: 10px; /* Add border-radius for rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add box shadow for better visual effect */
+        }
+        .card-img-top {
+            transition: transform 0.2s;
+            width: 100%;
+            height: auto;
+        }
+        .card:hover .card-img-top {
+            transform: scale(1.1);
+        }
+        .card-text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 15px;
+        }
+        .card-text-overlay p {
+            margin-bottom: 0;
+        }
+        .card-text-below {
+            padding: 15px;
+            background-color: #f8f9fa; /* Background color for text below the image */
+            border-top: 1px solid #dee2e6; /* Add a border at the top for separation */
+        }
   .banner {
             background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("./Assets/Image/FacilityBanner.png");
           }
@@ -52,105 +84,121 @@
       </header>
       <br>
       <div class="row">
-          <div class="col-12 col-md-4">
-              <div class="card">
-                  <img src="./Assets/Image/punakha-residency-1.jpg" class="card-img-top" alt="Waterfall" />
-                  <div class="card-body">
-                      <h5 class="card-title"><b>Punakha Residency</b></h5>
-                      <p class="card-text">
-                          <b>Distance:</b> 750m from taxi parking <br>
-                          <b>Phone Number:</b> +975 2 584 777
-                      </p>
-                      <br>
-                      <p>Punakha Residency in Khuruthang in Punakha is a tourist standard hotel based in Punakha (Khuruthang Town), the winter capital city of Bhutan.</p>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="col-12 col-md-4">
-              <div class="card">
-                  <img src="./Assets/Image/Hotel Khuru khuru.png" class="card-img-top" alt="Sunset Over the Sea" />
-                  <div class="card-body">
-                      <h5 class="card-title"><b>Hotel Khuruu Khuruu</b></h5>
-                      <p class="card-text">
-                          <b>Distance:</b> 600m from taxi parking <br>
-                          <b>Phone Number:</b> +975 17820378
-                      </p>
-                      <br>
-                      <p>The Khuruu Khuruu Hotel gives great packages & offers excellent accommodation, services and facilities to make your stay in Punakha a remarkable journey.</p>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="col-12 col-md-4">
-              <div class="card">
-                  <img src="./Assets/Image/six sense.png" class="card-img-top" alt="Sunset over the Sea" />
-                  <div class="card-body">
-                      <h5 class="card-title"><b>Six Senses Punakha</b></h5>
-                      <p class="card-text">
-                          <b>Distance:</b> 15.3km from taxi parking <br>
-                          <b>Phone Number:</b> +975 2350826
-                      </p>
-                      <br>
-                      <p>Enjoy Six Senses Bhutan hotel deals and booking offers to complement the seasons, a special event, a cultural celebration or even when we don't need a reason.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <br><br><br>
-  <header class="home-header">
-      <h2 style="font-size: 50px; font-weight: bolder; color: #196DB9;">Restaurant</h2>
-  </header>
-  <br>
-  <div class="container">
-      <div class="row">
-          <div class="col-12 col-md-4">
-              <div class="card">
-                  <img src="./Assets/Image/Raven Restaurant.png" class="card-img-top" alt="Waterfall" />
-                  <div class="card-body">
-                      <h5 class="card-title"><b>Raven Restaurant</b></h5>
-                      <p class="card-text">
-                          <b>Distance:</b> 550m from taxi parking <br>
-                          <b>Phone Number:</b> +975 17376745
-                      </p>
-                      <br>
-                      <p>Raven Restaurant serves you with Bhutanese, Nepali and Indian Food as well as FastFood.</p>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="col-12 col-md-4">
-              <div class="card">
-                  <img src="./Assets/Image/Kuenga Restaurant.png" class="card-img-top" alt="Sunset Over the Sea" />
-                  <div class="card-body">
-                      <h5 class="card-title"><b>Kuenga Restaurant</b></h5>
-                      <p class="card-text">
-                          <b>Distance:</b> 550m from taxi parking <br>
-                          <b>Phone Number:</b> +975 17615161
-                      </p>
-                      <br>
-                      <p>Sangay’s hotel offers all the basic needs for stay to travelers with tight budget.</p>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="col-12 col-md-4">
-              <div class="card">
-                  <img src="./Assets/Image/Brother Restaurant.jpg" class="card-img-top" alt="Sunset over the Sea" />
-                  <div class="card-body">
-                      <h5 class="card-title"><b>Brother Restaurant</b></h5>
-                      <p class="card-text">
-                          <b>Distance:</b> 550m from taxi parking <br>
-                          <b>Phone Number:</b> +975 17638107
-                      </p>
-                      <br>
-                      <p>Local Restaurant is a series of five lodges spread across the central valleys of Bhutan.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="./Assets/Image/punakha-residency-1.jpg" class="card-img-top" alt="Punakha Residency">
+                <div class="card-text-overlay">
+                    <div class="card-text">
+                        <p>
+                            <b>Distance:</b> 750m from taxi parking <br>
+                            <b>Phone Number:</b> +975 2 584 777
+                        </p>
+                    </div>
+                </div>
+                <div class="card-text-below">
+                    <h5 class="card-title">Punakha Residency</h5>
+                    <p>Punakha Residency in Khuruthang in Punakha is a tourist standard hotel based in Punakha (Khuruthang Town), the winter capital city of Bhutan.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="./Assets/Image/Hotel Khuru khuru.png" class="card-img-top" alt="Hotel Khuruu Khuruu">
+                <div class="card-text-overlay">
+                    <div class="card-text">
+                        <p>
+                            <b>Distance:</b> 600m from taxi parking <br>
+                            <b>Phone Number:</b> +975 17820378
+                        </p>
+                    </div>
+                </div>
+                <div class="card-text-below">
+                    <h5 class="card-title">Hotel Khuruu Khuruu</h5>
+                    <p>The Khuruu Khuruu Hotel gives great packages & offers excellent accommodation, services and facilities to make your stay in Punakha a remarkable journey.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="./Assets/Image/six sense.png" class="card-img-top" alt="Six Senses Punakha">
+                <div class="card-text-overlay">
+                    <div class="card-text">
+                        <p>
+                            <b>Distance:</b> 15.3km from taxi parking <br>
+                            <b>Phone Number:</b> +975 2350826
+                        </p>
+                    </div>
+                </div>
+                <div class="card-text-below">
+                    <h5 class="card-title">Six Senses Punakha</h5>
+                    <p>Enjoy Six Senses Bhutan hotel deals and booking offers to complement the seasons, a special event, a cultural celebration or even when we don't need a reason.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="home-header mt-5">
+        <h2 style="font-size: 50px; font-weight: bolder; color: #196DB9;">Restaurant</h2>
+    </header>
+
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="./Assets/Image/Raven Restaurant.png" class="card-img-top" alt="Raven Restaurant">
+                <div class="card-text-overlay">
+                    <div class="card-text">
+                        <p>
+                            <b>Distance:</b> 550m from taxi parking <br>
+                            <b>Phone Number:</b> +975 17376745
+                        </p>
+                    </div>
+                </div>
+                <div class="card-text-below">
+                    <h5 class="card-title">Raven Restaurant</h5>
+                    <p>Raven Restaurant serves you with Bhutanese, Nepali and Indian Food as well as FastFood.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="./Assets/Image/Kuenga Restaurant.png" class="card-img-top" alt="Kuenga Restaurant">
+                <div class="card-text-overlay">
+                    <div class="card-text">
+                        <p>
+                            <b>Distance:</b> 550m from taxi parking <br>
+                            <b>Phone Number:</b> +975 17615161
+                        </p>
+                    </div>
+                </div>
+                <div class="card-text-below">
+                    <h5 class="card-title">Kuenga Restaurant</h5>
+                    <p>Sangay’s hotel offers all the basic needs for stay to travelers with tight budget.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="./Assets/Image/Brother Restaurant.jpg" class="card-img-top" alt="Brother Restaurant">
+                <div class="card-text-overlay">
+                    <div class="card-text">
+                        <p>
+                            <b>Distance:</b> 550m from taxi parking <br>
+                            <b>Phone Number:</b> +975 17638107
+                        </p>
+                    </div>
+                </div>
+                <div class="card-text-below">
+                    <h5 class="card-title">Brother Restaurant</h5>
+                    <p>Local Restaurant is a series of five lodges spread across the central valleys of Bhutan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
     
