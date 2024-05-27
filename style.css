@@ -20,7 +20,7 @@
   font-weight: bold;
 }
 .navbar-nav .nav-link {
-  color: #fff; /* White */
+  color: #fff !important; /* White */
 }
 .navbar-toggler {
   border-color: #fff; /* White */
