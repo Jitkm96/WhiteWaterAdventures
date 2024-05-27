@@ -147,10 +147,12 @@ function sendDetailsToWhatsApp() {
 
     const whatsappMessage = `*${subject}*\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nMessage: ${message}`;
 
-    const yourWhatsAppNumber = '97577383218'; // Replace with your WhatsApp number without country code
+    const yourWhatsAppNumber = '97577383218';
     const whatsappUrl = `https://wa.me/${yourWhatsAppNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
 }
+
+
 
           
           </script>
