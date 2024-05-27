@@ -9,7 +9,7 @@
   z-index: 1000;
 }
 .navbar-90-black {
-  background-color: rgb(26, 26, 26) !important;
+  background-color: rgb(9, 9, 9) !important;
 }
 
 .nav-link {
@@ -40,119 +40,41 @@
 
   
 /* Footer */
-/* .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-     
-.footer-logo img {
-  height: 50px;
-  margin-bottom: 10px;
-}
-     
-.footer-links,
-.social-media {
-  margin-bottom: 10px;
-}
-     
-.footer-bottom {
-  font-size: 0.8em;
-} */
-/* Custom Footer Styling */
-/* Custom Footer Styling */
-/* Custom Footer Styling */
 #custom-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  font-family: Arial, sans-serif;
   text-align: center;
+  background-color: rgb(10, 10, 10); /* Optional: Background color */
+  padding: 20px; /* Optional: Padding around the footer */
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: left;
 }
 
 .footer-row {
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin: 10px 0;
 }
 
 .footer-column {
-  flex: 1 1 calc(33.33% - 20px);
-  margin-bottom: 20px;
-  padding: 0 15px;
+  margin: 10px 0;
 }
 
 .footer-logo img {
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.footer-links p,
-.footer-links a,
-.footer-logo p,
-.footer-social p {
-  margin: 0 0 10px;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-links a:hover {
-  color: #ddd;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer-social img {
-  margin-right: 10px;
-  transition: transform 0.3s;
-}
-
-.footer-social img:hover {
-  transform: scale(1.1);
+  margin: 0 5px;
 }
 
 .footer-bottom {
-  text-align: center;
-  font-size: 0.8em;
   margin-top: 20px;
 }
-
-.center-row {
-  justify-content: center;
-}
-
-.center-column {
-  flex: 1 1 100%;
-  text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .footer-column {
-      flex: 1 1 100%;
-      margin-bottom: 20px;
-      padding: 0;
-  }
-}
-
-
-
-
 
 
 
