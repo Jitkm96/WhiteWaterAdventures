@@ -766,3 +766,30 @@ left: 80%;
   height: 100%;
   object-fit: cover;
 }
+
+
+/* service */
+/* background */
+.pattern {
+  position: relative;
+  overflow: hidden;
+}
+
+.pattern::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./Assets/Image/pattern 4.png'); /* Your background image URL */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08; /* Adjust the opacity value as needed */
+  z-index: 1;
+}
+
+.pattern > * {
+  position: relative;
+  z-index: 2;
+}
