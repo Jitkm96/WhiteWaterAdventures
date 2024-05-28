@@ -26,7 +26,7 @@
   border-color: #fff; /* White */
 }
 .navbar-toggler-icon {
-  background-color: rgba: 33, 37, 41; /* White */
+  background-color: rgba(33, 37, 41);
 }
 .nav-item.book a {
   background-color: #FF7A00; /* Orange */
@@ -359,9 +359,9 @@ h4 {
  margin-bottom: 2vw;
  color: #196DB9;
 }
-.adv {
+/* .adv {
  background-color: ;
-}
+} */
 .form-section {
  margin-bottom: 20px;
 }
@@ -672,10 +672,9 @@ background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background
 text-align: center;
 margin-top: -50px; /* Overlap the header slightly with the image */
 }
-.home-header h1 {
-
-/* margin-bottom: 1rem; */
-}
+/* .home-header h1 {
+margin-bottom: 1rem;
+} */
 
 
 
