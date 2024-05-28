@@ -22,11 +22,49 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .banner {
-            background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("./Assets/Image/ContactBanners.png");
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("./Assets/Image/ContactBanners.png");
           }
 .c {
   font-weight: bold;
 }
+/* Whatsapp instruction */
+.st.ud {
+    position: relative;
+    display: inline-block;
+  }
+
+  .st.ud .tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the button */
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .st.ud:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .cnt {
+    width: 45px; /* Adjust the size as needed */
+    height: 45px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
 </style>
 </head>
 <body>
@@ -58,14 +96,13 @@
     <div class="container">
         <section class="contact-options">
             <div class="contact-option">
-              <button class="CL US">
+              <button class="CL US st ud">
                 <a href="tel:+97577383218">
-                <img class="cnt" src="./Assets/Icons/telephone.png" alt="Call Us"></a>
-                <!-- <span class="material-symbols-outlined">
-                  call
-                </span> -->
+                  <img class="cnt" src="./Assets/Icons/telephone.png" alt="Call Us">
+                </a>
                 <h2>Call Us</h2>
-                <p>+123 456 789</p>
+                <p>+975 773 83218</p>
+                <div class="tooltip">For desktop users, use WhatsApp to contact us at +97577383218</div>
               </button>
             </div>
             <div class="contact-option">
@@ -79,7 +116,7 @@
             </div>
         </section>
         <section class="contact-form">
-          <h2 class="mb-5 mt-3">Your thoughts matter! Send us a message.</h2>
+          <h2 class="mb-5 mt-3" style="color: #007bff;">Your thoughts matter! Send us a message.</h2>
           <form id="contactForm">
               <div class="form-group flex-group">
                   <div class="flex-item lb">
@@ -147,10 +184,12 @@ function sendDetailsToWhatsApp() {
 
     const whatsappMessage = `*${subject}*\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nMessage: ${message}`;
 
-    const yourWhatsAppNumber = '97577383218'; // Replace with your WhatsApp number without country code
+    const yourWhatsAppNumber = '97577383218';
     const whatsappUrl = `https://wa.me/${yourWhatsAppNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
 }
+
+
 
           
           </script>

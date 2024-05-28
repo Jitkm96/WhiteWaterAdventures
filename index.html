@@ -39,19 +39,19 @@
           }
 /* Crousal */
 .homeSlide1_img {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./Assets/Image/Herobanner1.png");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/Banner-2.png");
     background-size: cover;
     background-position: center;
 }
 
 .homeSlide2_img {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./Assets/Image/HomeBanner2.png");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/Banner-1.png");
     background-size: cover;
     background-position: center;
 }
 
 .homeSlide3_img {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./Assets/Image/HomeBanner3.png");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/HomeBanner3.png");
     background-size: cover;
     background-position: center;
 }
@@ -59,6 +59,19 @@
 .h {
   font-weight: bold;
 }
+.km {
+            display: flex;
+            /* list-style: none;  */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+            justify-content: center;
+        }
+        .m {
+            margin-right: 20px; /* Space between items */
+            text-align: left;
+            margin-left: 15px;
+        }
+        
 
 </Style>
 
@@ -124,12 +137,10 @@
 </div>
 </div>
 
-
     <!-- 2 section -->
     <div class="subtitle">
     <h2>Discover the Ultimate Rafting Experience with<br><span style="font-size: larger; font-weight: bolder; color: #196DB9;"> White Water Adventure!</span></h2>
     
-
     <!-- Cards -->
     <div class="album py-5 bg-body-primary">
   <div class="container">
@@ -145,8 +156,8 @@
             </div>
           </div>
           <div class="card-body ser">
-            <h4 style="margin-top: 5px; margin-bottom: 2px;">Pochhu</h4>
-            <p class="card-text">The Pochhu is known for its thrilling rapids on the Pochhu river which offers adventure and exciting rafting services.</p>
+            <h4 style="margin-top: 5px; margin-bottom: 2px;">Phochhu</h4>
+            <p class="card-text">The Phochhu is known for its thrilling rapids on the Pochhu river which offers adventure and exciting rafting services.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <a href="./Pho chhu.html"><button type="button" class="btn btn-sm btn-outline-secondary"><b>Read More</b></button></a>
@@ -212,28 +223,22 @@
 <!-- Ratings -->
 <div class="reviews-section">
   <div class="container marketing">
-      <div class="row">
-          <div class="col-lg-4 col-md-6">
-              <div class="review-card">
-                  <img class="review-icon" src="./Assets/Icons/social (1).png" alt="Google Reviews">
-                  <div class='sk-ww-google-reviews' data-embed-id='25415512'></div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-              <div class="review-card">
-                  <img class="review-icon" src="./Assets/Icons/facebook.png" alt="Facebook Reviews">
-                  <div class='sk-ww-google-reviews' data-embed-id='25415512'></div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-              <div class="review-card">
-                  <img class="review-icon" src="./Assets/Icons/social.png" alt="Social Media Reviews">
+      <div class="row g-4 justify-content-center"> <!-- Center the single column -->
+          <div class="col-lg-6 col-md-8"> <!-- Adjusted column width for better centering -->
+              <div class="review-card p-3 rounded">
+                  <img class="review-icon mb-3" src="./Assets/Icons/social (1).png" alt="Google Reviews">
                   <div class='sk-ww-google-reviews' data-embed-id='25415512'></div>
               </div>
           </div>
       </div>
   </div>
 </div>
+<!-- <div class="col-lg-6 col-md-6">
+              <div class="review-card p-3 rounded">
+                  <img class="review-icon mb-3" src="./Assets/Icons/social.png" alt="Social Media Reviews" style="max-width: 100px;">
+                  <div class='sk-ww-google-reviews' data-embed-id='25415512'></div>
+              </div>
+          </div> -->
 
   
   <!-- Certification -->
@@ -282,6 +287,10 @@
       <div class="Revi">
       <h2 class="fnt" style="color: white; text-align: left; padding-left: 5vw;">What Our Customer say about their experience?</h2>
       <div class='sk-ww-google-reviews' data-embed-id='25416215'></div>
+      <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-90f7d72a-1b82-4a4f-a52c-d40824fe2efd" data-elfsight-app-lazy></div> -->
+<!-- <div class="tagembed-widget" style="width:100%;height:100%" data-widget-id="150847" view-url="https://widget.tagembed.com/150847"></div><script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script> -->
+                                                            
     </div>
     </div>
 
@@ -322,6 +331,9 @@
             <div class="col-12">
                 <h2 class="text-left fnt" style="color: #196DB9; font-weight: bold">Locate Us</h2>
                 <p ><b>Address:</b> Changyul, Punakha, Bhutan</p>
+                <ul class="km"><li class="m">5.4 km from Khuruthang</li>
+                <li class="m">71.4km from Thimphu</li>
+                <li class="m">31.4km from Paro</li></ul>
                 <div class="map-container">
                     <!-- Replace the src value with your actual Google Maps embed code -->
                     <iframe 
@@ -350,7 +362,7 @@
                 <span class="toggle-icon">+</span>
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                <div class="card-body">
+                <div class="card-body" style="text-align: left;">
                   Our guide are professional and know the river better than anyone else. our equipment are regularly checked to ensure our customer enjoy a safe rafting experience. 
                 </div>
             </div>
@@ -362,7 +374,7 @@
                 <span class="toggle-icon">+</span>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                <div class="card-body">
+                <div class="card-body" style="text-align: left;">
                   Packages are based on boats, where maximum of 6 people are allowed.
                 </div>
             </div>
@@ -374,7 +386,7 @@
                 <span class="toggle-icon">+</span>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-                <div class="card-body">
+                <div class="card-body" style="text-align: left;">
                   You can directly contact our guild after the trip or you can leave a review on our google page. You can also visit our website and provide your feedback on our contact page.
                 </div>
             </div>
@@ -386,7 +398,7 @@
                 <span class="toggle-icon">+</span>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
-                <div class="card-body">
+                <div class="card-body" style="text-align: left;">
                     You can check your internet connection or call us directly at the contact number given in our contact page.
                 </div>
             </div>
@@ -416,36 +428,42 @@
       <script>
 // States
 document.addEventListener("DOMContentLoaded", function() {
-        let options = {
-            threshold: 0.5
-        };
-        let observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    let counters = document.querySelectorAll('.stats-number');
-                    counters.forEach(counter => {
-                        let target = +counter.getAttribute('data-target');
-                        let count = 0;
-                        let increment = target / 100; // Adjust for animation speed
-                        let updateCount = () => {
-                            count += increment;
-                            if (count < target) {
-                                counter.innerText = Math.ceil(count);
-                                setTimeout(updateCount, 10);
-                            } else {
-                                counter.innerText = target;
-                            }
-                        };
-                        updateCount();
-                    });
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, options);
+            let options = {
+                threshold: 0.5
+            };
+            let observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        let counters = document.querySelectorAll('.stats-number');
+                        counters.forEach(counter => {
+                            let target = +counter.getAttribute('data-target');
+                            let count = 0;
+                            let increment = target / 100; // Adjust for animation speed
+                            let updateCount = () => {
+                                count += increment;
+                                if (count < target) {
+                                    counter.innerText = Math.ceil(count);
+                                    setTimeout(updateCount, 10);
+                                } else {
+                                    if (target >= 1000) {
+                                        counter.innerText = `+${Math.floor(target / 1000)}K`;
+                                    } else if (target > 0) {
+                                        counter.innerText = `+${target}`;
+                                    } else {
+                                        counter.innerText = target;
+                                    }
+                                }
+                            };
+                            updateCount();
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
 
-        let section = document.querySelector('.stats-section');
-        observer.observe(section);
-    });
+            let section = document.querySelector('.stats-section');
+            observer.observe(section);
+        });
 
         //  <!-- FAQ -->
         // JavaScript to toggle the + and - signs
