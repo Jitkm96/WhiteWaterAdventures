@@ -431,46 +431,7 @@ function hideTooltip() {
     document.getElementById("tooltipDialog").style.display = "none";
 }
 
-
-
-
-
-
-    // Form to whatsApp
-    // function toggleDropdown() {
-    //         var dropdownContent = document.getElementById('dropdownContent');
-    //         dropdownContent.style.display = dropdownContent.style.display === 'none' ? 'block' : 'none';
-    //     }
-
-    //     function toggleQuantityInput(quantityInputId, checkbox) {
-    //         var quantityInput = document.getElementById(quantityInputId);
-    //         quantityInput.style.display = checkbox.checked ? 'inline' : 'none';
-    //     }
-
-    //     function submitForm() {
-    //         var form = document.getElementById('adventureForm');
-    //         var formData = new FormData(form);
-    //         var message = "Adventure Options:\n";
-            
-    //         formData.forEach((value, key) => {
-    //             message += `${key}: ${value}\n`;
-    //         });
-
-    //         var whatsappUrl = `https://wa.me/97577383218?text=${encodeURIComponent(message)}`;
-    //         window.open(whatsappUrl, '_blank');
-    //     }
-
-    //     document.addEventListener("DOMContentLoaded", function() {
-    //         var form = document.getElementById('adventureForm');
-    //         form.addEventListener('submit', function(event) {
-    //             event.preventDefault();
-    //             submitForm();
-    //         });
-
-    //         document.getElementById('dropdownContent').style.display = 'none';
-    //         var quantityInputs = document.querySelectorAll('.quantity-input');
-    //         quantityInputs.forEach(input => input.style.display = 'none');
-    //     });
+// WhatsApp
     function sendMessage() {
     const form = document.getElementById('adventureForm');
     const name = form.name.value;
