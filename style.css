@@ -247,7 +247,6 @@ transform: translateY(-10px);
 text-align: center;
 }
 
-
 /* Certification */
    .certi {
     background-image: url('./Assets/Image/TCD-Guide.png');
@@ -331,6 +330,7 @@ color: white;
 width: 90vw;
 margin-left: 5vw;
 }
+
 /* Safety instruction */
 .rafting-section {
  position: relative;

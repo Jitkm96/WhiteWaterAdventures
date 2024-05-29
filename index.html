@@ -193,7 +193,6 @@
 
 
   <!-- States -->
-  <!-- <h2 class="text mb-4 fnt" style="text-align: left;">Our Achievements</h2> -->
   <section class="stats-section">
     <div class="container">
         <div class="row">
@@ -233,13 +232,6 @@
       </div>
   </div>
 </div>
-<!-- <div class="col-lg-6 col-md-6">
-              <div class="review-card p-3 rounded">
-                  <img class="review-icon mb-3" src="./Assets/Icons/social.png" alt="Social Media Reviews" style="max-width: 100px;">
-                  <div class='sk-ww-google-reviews' data-embed-id='25415512'></div>
-              </div>
-          </div> -->
-
   
   <!-- Certification -->
 <section class="section certi">
@@ -249,7 +241,6 @@
       <p class="certi-description mt-3">Trust in Expertise: Your safety is our top priority. Our team of well-trained, experienced, and fun-loving river guides are true experts on these rivers. With us, you can enjoy the thrill of rafting with complete peace of mind, knowing that every safety detail has been taken care of.</p>
   </div>
 </section>
-
 
   <!-- Services -->
   <section class="Feat py-5" >
@@ -283,16 +274,13 @@
 </section>
 
     <!-- Reviews -->
-    <div style="background-color: #196DB9;padding-top: 3vw;">
-      <div class="Revi">
-      <h2 class="fnt" style="color: white; text-align: left; padding-left: 5vw;">What Our Customer say about their experience?</h2>
-      <div class='sk-ww-google-reviews' data-embed-id='25416215'></div>
-      <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-90f7d72a-1b82-4a4f-a52c-d40824fe2efd" data-elfsight-app-lazy></div> -->
-<!-- <div class="tagembed-widget" style="width:100%;height:100%" data-widget-id="150847" view-url="https://widget.tagembed.com/150847"></div><script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script> -->
-                                                            
-    </div>
-    </div>
+<div style="background-color: #196DB9;padding-top: 3vw;">
+  <div class="Revi">
+    <h2 class="fnt" style="color: white; text-align: left; padding-left: 5vw;">What Our Customer say about their experience?</h2>
+      <!-- <div class='sk-ww-google-reviews' data-embed-id='25416215'></div> -->
+      <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25416215' frameborder='0' width='100%' height='400'></iframe>
+  </div>
+</div>
 
     <!-- Safety-->
     <div class="container-fluid rafting-section" style="margin-top: -5px;">
@@ -464,6 +452,17 @@ document.addEventListener("DOMContentLoaded", function() {
             let section = document.querySelector('.stats-section');
             observer.observe(section);
         });
+
+        // Reviews bug
+        document.addEventListener("DOMContentLoaded", function() {
+  if (!document.querySelector('.sk-ww-google-reviews')) {
+    const script = document.createElement('script');
+    script.src = 'https://widgets.sociablekit.com/google-reviews/widget.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+  }
+});
 
         //  <!-- FAQ -->
         // JavaScript to toggle the + and - signs
