@@ -740,3 +740,51 @@ left: 80%;
 
 
 /* Animation */
+.feat-section, .Feat {
+  padding: 20px;
+}
+.feat-container, .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.feat-row, .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feat-col, .col {
+  flex: 1;
+  padding: 10px;
+}
+.feat-card, .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.feat-card:hover, .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.feat-card-body, .card-body {
+  padding: 20px;
+}
+.feat-card-icon, .card-icon {
+  margin-bottom: 20px;
+}
+.feat-card-icon img, .card-icon img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.feat-card-icon img:hover, .card-icon img:hover {
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.feat-card-title, .card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.feat-card-text, .card-text {
+  font-size: 1em;
+  color: #666;
+}
