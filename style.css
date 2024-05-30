@@ -805,7 +805,7 @@ left: 80%;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./Assets/Image/pattern 4.png'); /* Your background image URL */
+  background-image: url('./Assets/Image/pattern\ 4.jpg'); /* Your background image URL */
   background-size: cover;
   background-position: center;
   opacity: 0.08; /* Adjust the opacity value as needed */
