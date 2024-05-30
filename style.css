@@ -15,26 +15,26 @@
   margin-left: 3vw;
 }
 .navbar-brand {
-  color: #fff; /* White */
+  color: #fff;
   font-weight: bold;
 }
 .navbar-nav .nav-link {
-  color: #fff !important; /* White */
+  color: #fff !important;
 }
 .navbar-toggler {
-  border-color: #fff; /* White */
+  border-color: #fff;
 }
 .navbar-toggler-icon {
   background-color: rgba(9, 9, 9);
 }
 .nav-item.book a {
-  background-color: #FF7A00; /* Orange */
-  color: #000; /* Black */
+  background-color: #FF7A00;
+  color: #000;
   border-radius: 3px;
   padding: 8px 15px;
 }
 .nav-item.book a:hover {
-  background-color: #FFA94D; /* Lighter Orange on Hover */
+  background-color: #FFA94D;
 }
 
   
@@ -127,21 +127,7 @@ color: #196DB9;
 
 /* Home Page */
 /* banner */
-.homeSlide11_img {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/Banner-2.png");
-  background-size: cover;
-  background-position: center;
-}
-.homeSlide22_img {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/Banner-1.png");
-  background-size: cover;
-  background-position: center;
-}
-.homeSlide33_img {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/HomeBanner3.png");
-  background-size: cover;
-  background-position: center;
-}
+
 
 
 .bn {
@@ -154,9 +140,9 @@ position:relative;
 /* crousel button and text */
 .static-caption {
 position: absolute;
-top: 450px; /* Adjust this value based on your navbar height */
-left: 10px; /* Adjust padding as needed */
-text-align: left; /* Adjusted from center to left */
+top: 450px;
+left: 10px;
+text-align: left;
 z-index: 10;
 }
 .bannertxt {
@@ -171,18 +157,18 @@ font-weight: 300;
 @media (min-width: 800px) and (max-width: 1050px) {
 .static-caption {
   position: absolute;
-  top: 400px; /* Adjust this value based on your navbar height */
-  left: 6px; /* Adjust padding as needed */
-  text-align: left; /* Adjusted from center to left */
+  top: 400px;
+  left: 6px;
+  text-align: left;
   z-index: 10;
 }
 }
 @media (max-width: 600px) {
 .static-caption {
   position: absolute;
-  top: 400px; /* Adjust this value based on your navbar height */
-  left: 5px; /* Adjust padding as needed */
-  text-align: left; /* Adjusted from center to left */
+  top: 400px;
+  left: 5px;
+  text-align: left;
   z-index: 10;
 }
 }
