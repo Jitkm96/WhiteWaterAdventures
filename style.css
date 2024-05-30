@@ -126,6 +126,24 @@ color: #196DB9;
 
 
 /* Home Page */
+/* banner */
+.homeSlide11_img {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/Banner-2.png");
+  background-size: cover;
+  background-position: center;
+}
+.homeSlide22_img {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/Banner-1.png");
+  background-size: cover;
+  background-position: center;
+}
+.homeSlide33_img {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/HomeBanner3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
 .bn {
 background-repeat:no-repeat;
 background-size:cover;
@@ -358,6 +376,18 @@ margin-left: 5vw;
     }
 .list-unstyled, li {
   margin-bottom: 0.5vw;
+}
+/* Map */
+.km {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+.m {
+  margin-right: 20px;
+  text-align: left;
+  margin-left: 15px;
 }
       /* FAQ */
       .faq-header {
