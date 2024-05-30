@@ -359,6 +359,30 @@ margin-left: 5vw;
 .list-unstyled, li {
   margin-bottom: 0.5vw;
 }
+      /* FAQ */
+      .faq-header {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .Fcard-header {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 1.25rem;
+    }
+    .Fcard-header:hover {
+        background-color: #f1f1f1;
+    }
+    .Fcard-header h5 {
+        margin-bottom: 0;
+    }
+    .Ftoggle-icon {
+        font-weight: bold;
+        font-size: 1.25rem;
+        transition: transform 0.2s ease-in-out;
+    }
 
 
 
@@ -665,7 +689,46 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-bottom: 10px;
 }
 }
+/* Whatsapp instruction */
+.st.ud {
+  position: relative;
+  display: inline-block;
+}
 
+.st.ud .tooltip {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the button */
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.st.ud:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cnt {
+  width: 45px; /* Adjust the size as needed */
+  height: 45px;
+}
+button {
+  border: 2px solid #e65c00;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 
 

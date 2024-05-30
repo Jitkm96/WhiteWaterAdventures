@@ -13,61 +13,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <Style>
-      /* FAQ */
-      .faq-header {
-              font-size: 24px;
-              margin-bottom: 20px;
-              text-align: left;
-          }
-          .card-header {
-              cursor: pointer;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              padding: 0.75rem 1.25rem;
-          }
-          .card-header:hover {
-              background-color: #f1f1f1;
-          }
-          .card-header h5 {
-              margin-bottom: 0;
-          }
-          .toggle-icon {
-              font-weight: bold;
-              font-size: 1.25rem;
-              transition: transform 0.2s ease-in-out;
-          }
 /* Crousal */
 .homeSlide1_img {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/Banner-2.png");
     background-size: cover;
     background-position: center;
 }
-
 .homeSlide2_img {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/Banner-1.png");
     background-size: cover;
     background-position: center;
 }
-
 .homeSlide3_img {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/HomeBanner3.png");
     background-size: cover;
     background-position: center;
 }
-
 .h {
   font-weight: bold;
 }
 .km {
             display: flex;
-            /* list-style: none;  */
-            padding: 0; /* Remove padding */
-            margin: 0; /* Remove margin */
+            padding: 0;
+            margin: 0;
             justify-content: center;
         }
-        .m {
-            margin-right: 20px; /* Space between items */
+.m {
+            margin-right: 20px;
             text-align: left;
             margin-left: 15px;
         }
@@ -276,7 +248,6 @@
 <div style="background-color: #196DB9;padding-top: 3vw;">
   <div class="Revi">
     <h2 class="fnt" style="color: white; text-align: left; padding-left: 5vw;">What Our Customer say about their experience?</h2>
-      <!-- <div class='sk-ww-google-reviews' data-embed-id='25416215'></div> -->
       <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25416215' frameborder='0' width='100%' height='400'></iframe>
   </div>
 </div>
@@ -344,9 +315,9 @@
     <div class="accordion" id="faqAccordion">
         <!-- FAQ Item 1 -->
         <div class="card fnt">
-            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <div class="Fcard-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <h5 class="mb-0">1. How safe is rafting?</h5>
-                <span class="toggle-icon">+</span>
+                <span class="Ftoggle-icon">+</span>
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
                 <div class="card-body" style="text-align: left;">
@@ -356,9 +327,9 @@
         </div>
         <!-- FAQ Item 2 -->
         <div class="card fnt">
-            <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div class="Fcard-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <h5 class="mb-0" style="text-align: left;">2. Is there different price package for adult and children??</h5>
-                <span class="toggle-icon">+</span>
+                <span class="Ftoggle-icon">+</span>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
                 <div class="card-body" style="text-align: left;">
@@ -368,9 +339,9 @@
         </div>
         <!-- FAQ Item 3 -->
         <div class="card fnt">
-            <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <div class="Fcard-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <h5 class="mb-0" style="text-align: left;">3. How can I provide feedback about my rafting experience?</h5>
-                <span class="toggle-icon">+</span>
+                <span class="Ftoggle-icon">+</span>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
                 <div class="card-body" style="text-align: left;">
@@ -380,9 +351,9 @@
         </div>
         <!-- FAQ Item 4 -->
         <div class="card fnt">
-            <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <div class="Fcard-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 <h5 class="mb-0" style="text-align: left;">4. I am not able to book or submit my feedback?</h5>
-                <span class="toggle-icon">+</span>
+                <span class="Ftoggle-icon">+</span>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
                 <div class="card-body" style="text-align: left;">
@@ -465,13 +436,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         //  <!-- FAQ -->
         // JavaScript to toggle the + and - signs
-        document.querySelectorAll('.card-header').forEach(header => {
+        document.querySelectorAll('.Fcard-header').forEach(header => {
             header.addEventListener('click', function () {
                 const openIcon = '+';
                 const closeIcon = '-';
-                const icon = this.querySelector('.toggle-icon');
+                const icon = this.querySelector('.Ftoggle-icon');
                 const isOpen = this.nextElementSibling.classList.contains('show');
-                document.querySelectorAll('.toggle-icon').forEach(icon => icon.textContent = openIcon);
+                document.querySelectorAll('.Ftoggle-icon').forEach(icon => icon.textContent = openIcon);
                 if (!isOpen) {
                     icon.textContent = closeIcon;
                 }
