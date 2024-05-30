@@ -49,7 +49,6 @@
  }
  .card-title, .card-text {
    margin-bottom: 1rem;
-   color: white;
  }
  .custom-radio {
    position: absolute;
@@ -331,21 +330,6 @@
             </div>
         </form>
     </div>
-    <!-- Feedback Modal -->
-<div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="feedbackModalLabel">Thank You!</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Thank you for your booking! Our staff will contact you shortly on WhatsApp.
-        </div>
-      </div>
-    </div>
-  </div>
-  
 
 <!-- Footer -->
 
@@ -449,7 +433,7 @@ function hideTooltip() {
 }
 
 // WhatsApp
-function sendMessage() {
+    function sendMessage() {
     const form = document.getElementById('adventureForm');
     const name = form.name.value;
     const age = form.age.value;
@@ -479,13 +463,7 @@ function sendMessage() {
     const yourWhatsAppNumber = '97577383218'; // Replace with your WhatsApp number in international format without '+'
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${yourWhatsAppNumber}&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
-
-    // Show feedback modal
-    var feedbackModal = new bootstrap.Modal(document.getElementById('feedbackModal'));
-    feedbackModal.show();
 }
-
-
 
 
     </script>
