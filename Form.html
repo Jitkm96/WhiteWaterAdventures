@@ -434,7 +434,7 @@ function hideTooltip() {
 }
 
 // WhatsApp
-    function sendMessage() {
+function sendMessage() {
     const form = document.getElementById('adventureForm');
     const name = form.name.value;
     const age = form.age.value;
@@ -464,7 +464,11 @@ function hideTooltip() {
     const yourWhatsAppNumber = '97577383218'; // Replace with your WhatsApp number in international format without '+'
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${yourWhatsAppNumber}&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
+
+    // Display feedback prompt
+    alert('Thank you for your booking! Our staff will contact you shortly on WhatsApp.');
 }
+
 
 
     </script>
