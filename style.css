@@ -189,7 +189,6 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-/* background: rgba(0, 0, 0, 0.5); */
 }
 .img-overlay .overlay-text {
 position: absolute;
@@ -197,10 +196,10 @@ bottom: 0;
 left: 0;
 width: 100%;
 height: 25%;
-color: #fff; /* Text color */
+color: #fff;
 padding-left: 10px;
 padding-top: 10px;
-background: rgba(0, 0, 0, 0.8); /* Background tint for the text */
+background: rgba(0, 0, 0, 0.8);
 text-align: left;
 }
 .ser {
@@ -211,7 +210,7 @@ font-weight: 500;
 }
 .overlay-text h4 {
 margin: 0;
-color: #196DB9; /* Title color */
+color: #196DB9;
 padding-left: 1vw;
 }
 .smalldetail, .smalldetails {
@@ -255,16 +254,13 @@ text-align: center;
     background-image: url('./Assets/Image/TCD-Guide.png');
     background-size: cover;
     background-position: center;
-    /* padding: 100px 0; */
     text-align: center;
     display: flex;
     justify-content: left;
     align-items: center;
-    /* padding: 5vw; */
     margin-left: 5vw;
 }
 .certi-content {
-    /* background: rgba(0, 0, 0, 0.9); */
     padding: 30px;
     border-radius: 10px;
     width: 60%;
@@ -499,7 +495,7 @@ margin-right: 4vw;
  cursor: pointer;
 }
 .form-check-input:checked + .form-check-label {
- font-weight: bold; /* Make label bold when checkbox is checked */
+ font-weight: bold;
  color: #e65c00;
 }
 /* Process */
@@ -550,13 +546,11 @@ margin-top: 20px;
 /* Base styles for .refundbox */
 .refundbox {
  background-color: #fff;
- /* border: 1px solid #ccc; */
  border-radius: 8px;
  padding: 20px;
  margin: 20px auto;
  margin-top: 0%;
  max-width: fit-content;
- /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
  font-family: Arial, sans-serif;
  line-height: 1.6;
 display: flex;
@@ -571,7 +565,6 @@ justify-content: center;
  margin-bottom: 10px;
  font-size: 16px;
 }
-/* Responsive adjustments for tablets */
 @media (max-width: 768px) {
  .refundbox {
    max-width: 85%;
@@ -582,13 +575,12 @@ justify-content: center;
      font-size: 15px;
  }
 }
-/* Responsive adjustments for mobile phones */
 @media (max-width: 480px) {
  .refundbox {
    max-width: 90%;
      padding: 10px;
      margin: 10px;
-     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Lighter shadow for smaller screens */
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
  }
  .refundbox li {
      font-size: 14px;
@@ -721,7 +713,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%; /* Position above the button */
+  bottom: 125%;
   left: 50%;
   margin-left: -100px;
   opacity: 0;
@@ -734,7 +726,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .cnt {
-  width: 45px; /* Adjust the size as needed */
+  width: 45px;
   height: 45px;
 }
 button {
@@ -768,13 +760,11 @@ text-align: center;
 .home-header {
 position: relative;
 padding: -1rem;
-background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+background-color: rgba(255, 255, 255, 0.8); 
 text-align: center;
-margin-top: -50px; /* Overlap the header slightly with the image */
+margin-top: -50px; 
 }
-/* .home-header h1 {
-margin-bottom: 1rem;
-} */
+
 
 
 
@@ -805,10 +795,10 @@ left: 80%;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./Assets/Image/pattern\ 4.jpg'); /* Your background image URL */
+  background-image: url('./Assets/Image/pattern\ 4.jpg'); 
   background-size: cover;
   background-position: center;
-  opacity: 0.08; /* Adjust the opacity value as needed */
+  opacity: 0.08;
   z-index: 1;
 }
 
