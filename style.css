@@ -298,6 +298,9 @@ text-align: center;
       border-width: 5px;
       border-radius: 20px;
     }
+  .Feat {
+    background-image: url();
+  }
     
 /* States */
 .stats-section {
@@ -734,3 +737,6 @@ left: 80%;
   position: relative;
   z-index: 2;
 }
+
+
+/* Animation */
