@@ -88,21 +88,7 @@
 
 <body>
 
-    <script src="//code.jquery.com/jquery.min.js"></script>
-
-	<script type="text/javascript" >
-		//<!-- start navigation -->
-		$.get("Nav.html", function(data){
-			$("#navigation").replaceWith(data);
-		});
-
-		// <!-- start footer -->
-		$.get("Footer.html", function(data){
-			$("#footer").replaceWith(data);
-		});
-	
-
-	</script>
+    
 <!-- Nav -->
 
 <div id="navigation"></div>
@@ -352,7 +338,21 @@
 
 <!-- Footer -->
 
-    
+<!-- Nav and footer link -->
+<script src="//code.jquery.com/jquery.min.js"></script>
+
+<script type="text/javascript" >
+    //<!-- start navigation -->
+    $.get("Nav.html", function(data){
+        $("#navigation").replaceWith(data);
+    });
+
+    // <!-- start footer -->
+    $.get("Footer.html", function(data){
+        $("#footer").replaceWith(data);
+    });
+
+</script>
     <script>
         // Cards
         document.querySelectorAll('.selectable-card').forEach(card => {
@@ -479,9 +479,6 @@ function hideTooltip() {
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${yourWhatsAppNumber}&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
-
-
-
     </script>
 
     <!-- Bootstrap JS and dependencies -->
