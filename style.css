@@ -127,7 +127,21 @@ color: #196DB9;
 
 /* Home Page */
 /* banner */
-
+.homeSlide11_img {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/Banner-2.webp");
+  background-size: cover;
+  background-position: center;
+}
+.homeSlide22_img {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/Banner-1.webp");
+  background-size: cover;
+  background-position: center;
+}
+.homeSlide33_img {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./Assets/Image/HomeBanner3.png");
+  background-size: cover;
+  background-position: center; 
+}
 
 
 .bn {
