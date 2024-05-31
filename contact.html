@@ -124,6 +124,12 @@
       </section>    
     </div>
 </main>
+<div id="successModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Thank you for your feedback! If you had any trouble sending your message, please check your internet connection or reach out to us directly.</p>
+  </div>
+</div>
 
 <!-- Footer -->
 
@@ -169,25 +175,50 @@ const whatsappMessage = `*${subject}*\nFirst Name: ${firstName}\nLast Name: ${la
 const yourWhatsAppNumber = '97577383218';
 const whatsappUrl = `https://wa.me/${yourWhatsAppNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 window.open(whatsappUrl, '_blank');
+// Store a flag in localStorage
+localStorage.setItem('whatsappMessageSent', 'true');
+
+// Open WhatsApp in a new tab
+window.open(whatsappUrl, '_blank');
+
+// Set a timeout to display the success message after 5 seconds
+setTimeout(() => {
+    if (localStorage.getItem('whatsappMessageSent') === 'true') {
+        showModal();
+        localStorage.removeItem('whatsappMessageSent'); // Remove the flag
+    }
+}, 5000);
 }
 
+function showModal() {
+const modal = document.getElementById('successModal');
+const span = document.getElementsByClassName('close')[0];
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzki_tsqC24TDVrP2uuMvL8fE3fo7TX-oEuxUVGyRPvi6oMudBoQo3TK6rBvtZM3qBJ/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
+// Display the modal
+modal.style.display = 'block';
 
-form.addEventListener('submit', e => {
-e.preventDefault()
-fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-.then(response =>  {
-  msg.innerHTML = "Message sent successfully"
-  setTimeout(function(){
-      msg.innerHTML = ""
-  },5000)
-  form.reset()
-})
-.catch(error => console.error('Error!', error.message))
- }) 
+// Close the modal when the user clicks on <span> (x)
+span.onclick = function() {
+    modal.style.display = 'none';
+}
+
+// Close the modal when the user clicks anywhere outside of the modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+}
+
+// Check for the flag when the page loads
+window.addEventListener('load', function() {
+if (localStorage.getItem('whatsappMessageSent') === 'true') {
+    showModal();
+    localStorage.removeItem('whatsappMessageSent'); // Remove the flag
+}
+});
+
+  
   </script>
 
   </body>
