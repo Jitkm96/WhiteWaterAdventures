@@ -264,7 +264,7 @@ text-align: center;
 
 /* Certification */
    .certi {
-    background-image: url('./Assets/Image/TCD-Guide.png');
+    background-image: url('./assets/image/tcb-guide.png');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -311,9 +311,7 @@ text-align: center;
       border-width: 5px;
       border-radius: 20px;
     }
-  .Feat {
-    background-image: url();
-  }
+
     
 /* States */
 .stats-section {
